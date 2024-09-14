@@ -7,7 +7,14 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-
+django = "4.2"
+psycopg2-binary = "^2.9.9"
+black = "^24.8.0"
+django-apscheduler = "^0.6.2"
+python-dotenv = "^1.0.1"
+pillow = "^10.4.0"
+django-phonenumber-field = {extras = ["phonenumberslite"], version = "^8.0.0"}
+ipython = "^8.26.0"
 
 [build-system]
 requires = ["poetry-core"]
