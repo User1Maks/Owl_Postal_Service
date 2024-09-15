@@ -6,18 +6,17 @@ NULLABLE = {'blank': True, 'null': True}
 class Client(models.Model):
     """Клиенты сервиса"""
     email = models.EmailField(max_length=100, verbose_name='email')
+    last_name = models.CharField(max_length=150, verbose_name='Фамилия',
+                                 **NULLABLE, help_text='Введите фамилию')
     first_name = models.CharField(max_length=150,
                                   **NULLABLE, verbose_name='Имя',
                                   help_text='Введите имя')
-    last_name = models.CharField(max_length=150, verbose_name='Фамилия',
-                                 **NULLABLE, help_text='Введите фамилию')
     patronymic = models.CharField(max_length=150,
                                   **NULLABLE, verbose_name='Отчество',
                                   help_text='Введите отчество')
     a_comment = models.TextField(verbose_name='Комментарий',
                                  help_text='Введите комментарий')
-    date_of_birth = models.DateField(editable=False,
-                                     verbose_name='Дата рождения',
+    date_of_birth = models.DateField(verbose_name='Дата рождения',
                                      **NULLABLE,
                                      help_text='Введите дату рождения')
 

@@ -1,0 +1,21 @@
+{% extends 'mailing/client_base.html' %}
+{% block content %}
+
+<div class="card">
+
+    <div class="card-body">
+        <h5 class="card-title">{{ object.email }}</h5>
+        <p class="card-text">{{ object.last_name }}
+            {{ object.first_name }}
+            {{ object.patronymic }}</p>
+        <p class="card-text">{{ object.a_comment }}</p>
+        <p class="card-date">Дата рождения: {{ object.date_of_birth }}</p>
+        <a class="p-2 btn btn-primary"
+           href="{% url 'mailing:client_list' %}"
+           role="button">Назад</a>
+    </div>
+</div>
+
+{% endblock %}
+
+
