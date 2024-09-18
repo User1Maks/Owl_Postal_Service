@@ -9,7 +9,7 @@ from django.views.generic import (
     TemplateView
 )
 
-from mailing.models import Client
+from mailing.models import Client, Message
 
 
 def index(request):
@@ -39,3 +39,28 @@ class ClientUpdateView(UpdateView):
 class ClientDeleteView(DeleteView):
     model = Client
     success_url = reverse_lazy('mailing:client_list')
+
+
+class MessageListView(ListView):
+    model = Message
+
+
+class MessageCreateView(CreateView):
+    model = Message
+    fields = '__all__'
+    success_url = reverse_lazy('mailing:message_list')
+
+
+class MessageDetailView(DetailView):
+    model = Message
+    # permission_required = 'mailing.messages_detail'
+
+
+class MessageUpdateView(UpdateView):
+    model = Message
+    fields = '__all__'
+    success_url = reverse_lazy('mailing:message_list')
+
+
+class MessageDeleteView(DeleteView):
+    model = Message

@@ -172,7 +172,7 @@ class Migration(migrations.Migration):
                         blank=True,
                         help_text="Загрузите изображение письма",
                         null=True,
-                        upload_to="mailings/images",
+                        upload_to="mailing/images",
                         verbose_name="Изображение письма",
                     ),
                 ),
@@ -240,11 +240,11 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name="mailing",
-            name="message",
+            name="mailing",
             field=models.ForeignKey(
                 on_delete=django.db.models.deletion.CASCADE,
                 related_name="settings_message",
-                to="mailing.message",
+                to="mailing.mailing",
                 verbose_name="Сообщение рассылки",
             ),
         ),

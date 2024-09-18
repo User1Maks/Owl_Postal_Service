@@ -1,0 +1,21 @@
+{% extends 'mailing/message_base.html' %}
+{% load my_tags %}
+{% block content %}
+
+
+{% for object in object_list %}
+<div class="card" style="width: 18rem;">
+    <img src="{{ object.image_message | media_filter }}" class="card-img-top"
+         alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{ object.letter_subject }}</h5>
+        <p class="card-text">{{ object.letter_body }}</p>
+        <a class="btn btn-primary"
+           href="{% url 'mailing:message_detail' object.pk %}"
+           role="button">Открыть</a>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
+
+
