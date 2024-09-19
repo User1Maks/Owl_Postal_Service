@@ -67,7 +67,7 @@ class Mailing(models.Model):
         help_text='Укажите название рассылки')
 
     datetime_first_mailing = models.DateTimeField(
-        verbose_name='Дата и время отправки рассылки')
+            verbose_name='Дата и время отправки рассылки')
 
     next_datetime_first_mailing = models.DateTimeField(
         verbose_name='Дата и время следующей отправки рассылки')

@@ -1,4 +1,4 @@
-{% extends 'mailing/message_base.html' %}
+{% extends 'base.html' %}
 {% load my_tags %}
 {% block content %}
 
@@ -16,22 +16,25 @@
                     <p class="card-text">{{object.letter_body}}</p>
                 </div>
                 <div class="d-flex flex-column align-items-center gap-2">
-                    <div class="fs-4 fw-bold">{{object.price}} </div>
+                    <div class="fs-4 fw-bold">{{object.price}}</div>
 
 
-                    <a class="p-2 btn btn-warning "
+                    <a class="p-2 btn btn-warning mb-2"
                        href="{% url 'mailing:message_update' object.pk %}"
-                       role="button">Редактировать</a>
+                       role="button"
+                       style="margin-right: 10px;">Редактировать</a>
 
 
-                    <a class="p-2 btn btn-danger "
+                    <a class="p-2 btn btn-danger mb-2"
                        href="{% url 'mailing:message_delete' object.pk %}"
-                       role="button">Удалить</a>
+                       role="button"
+                       style="margin-right: 10px;">Удалить</a>
 
 
-                    <a class="btn btn-primary"
+                    <a class="btn btn-primary mb-2"
                        href="{% url 'mailing:message_list' %}"
-                       role="button">Назад</a>
+                       role="button"
+                       style="margin-right: 10px;">Назад</a>
 
 
                 </div>

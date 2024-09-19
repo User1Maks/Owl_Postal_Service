@@ -7,17 +7,19 @@
         <div class="col-8 mx-auto">
             <form class="row" method="post" enctype="multipart/form-data">
                 <div class="card">
-                    <p class="card-text">Действительно хотите удалить данные
-                        {{object.letter_subject}} ?</p>
+                    <p class="p-2 fs-4 card-text mx-auto">Рассылка</p>
                     <div class="card-body">
+
                         {% csrf_token %}
+                        {{ form.as_p }}
                     </div>
-                    <button type="submit" class="p-2 btn btn-danger">
-                        Удалить
+                    <button type="submit" class="btn btn-primary">
+                        {% if object %}
+                        Сохранить
+                        {% else %}
+                        Создать
+                        {% endif %}
                     </button>
-                    <a class="btn btn-primary"
-                       href="{% url 'mailing:message_list'%}"
-                       role="button">Отменить</a>
                 </div>
 
             </form>

@@ -2,20 +2,25 @@
 {% load my_tags %}
 {% block content %}
 
-
-{% for object in object_list %}
-<div class="card" style="width: 18rem;">
-    <img src="{{ object.image_message | media_filter }}" class="card-img-top"
-         alt="...">
-    <div class="card-body">
-        <h5 class="card-title">{{ object.letter_subject }}</h5>
-        <p class="card-text">{{ object.letter_body }}</p>
-        <a class="btn btn-primary"
-           href="{% url 'mailing:message_detail' object.pk %}"
-           role="button">Открыть</a>
+<div class="card-container" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+    {% for object in object_list %}
+    <div class="card mb-3" style="width: 18rem;">
+        <img src="{{ object.image_message | media_filter }}"
+             class="card-img-top"
+             alt="..."
+             style="max-width: 100%; height: auto; max-height: 160px;">
+        <div class="card-body">
+            <h5 class="card-title">{{ object.letter_subject }}</h5>
+            <p class="card-text">
+                {{ object.letter_body | truncatechars:100 }}</p>
+            <a class="btn btn-primary"
+               href="{% url 'mailing:message_detail' object.pk %}"
+               role="button">Открыть</a>
+        </div>
     </div>
+
+    {% endfor %}
 </div>
-{% endfor %}
 {% endblock %}
 
 

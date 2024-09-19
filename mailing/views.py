@@ -5,11 +5,10 @@ from django.views.generic import (
     CreateView,
     DetailView,
     UpdateView,
-    DeleteView,
-    TemplateView
+    DeleteView
 )
 
-from mailing.models import Client, Message
+from mailing.models import Client, Message, Mailing
 
 
 def index(request):
@@ -64,3 +63,28 @@ class MessageUpdateView(UpdateView):
 
 class MessageDeleteView(DeleteView):
     model = Message
+    success_url = reverse_lazy('mailing:message_list')
+
+
+class MailingListView(ListView):
+    model = Mailing
+
+
+class MailingCreateView(CreateView):
+    model = Mailing
+    fields = '__all__'
+    success_url = reverse_lazy('mailing:mailing_list')
+
+
+class MailingDetailView(DetailView):
+    model = Mailing
+
+
+class MailingUpdateView(UpdateView):
+    model = Mailing
+    fields = '__all__'
+    success_url = reverse_lazy('mailing:mailing_list')
+
+
+class MailingDeleteView(DeleteView):
+    model = Mailing
