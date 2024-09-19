@@ -17,6 +17,9 @@
                href="{% url 'mailing:message_detail' object.pk %}"
                role="button">Открыть</a>
         </div>
+        <div class="card-footer">
+               Просмотров: {{ object.view_counter }}
+            </div>
     </div>
 
     {% endfor %}

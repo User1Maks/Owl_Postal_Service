@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'home.html' %}
 {% load my_tags %}
 {% block content %}
 
@@ -15,29 +15,32 @@
                     <h5 class="card-title">{{object.letter_subject}}</h5>
                     <p class="card-text">{{object.letter_body}}</p>
                 </div>
-                <div class="d-flex flex-column align-items-center gap-2">
-                    <div class="fs-4 fw-bold">{{object.price}}</div>
 
 
-                    <a class="p-2 btn btn-warning mb-2"
-                       href="{% url 'mailing:message_update' object.pk %}"
-                       role="button"
-                       style="margin-right: 10px;">Редактировать</a>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+
+                <a class="btn btn-primary mb-2"
+                   href="{% url 'mailing:message_list' %}"
+                   role="button"
+                   style="margin-right: 10px;">Назад</a>
 
 
-                    <a class="p-2 btn btn-danger mb-2"
-                       href="{% url 'mailing:message_delete' object.pk %}"
-                       role="button"
-                       style="margin-right: 10px;">Удалить</a>
+                <a class="p-2 btn btn-warning mb-2"
+                   href="{% url 'mailing:message_update' object.pk %}"
+                   role="button"
+                   style="margin-right: 10px;">Редактировать</a>
 
 
-                    <a class="btn btn-primary mb-2"
-                       href="{% url 'mailing:message_list' %}"
-                       role="button"
-                       style="margin-right: 10px;">Назад</a>
+                <a class="p-2 btn btn-danger mb-2"
+                   href="{% url 'mailing:message_delete' object.pk %}"
+                   role="button"
+                   style="margin-right: 10px;">Удалить</a>
 
 
-                </div>
+            </div>
+            <div class="card-footer">
+               Просмотров: {{ object.view_counter }}
             </div>
         </div>
     </div>

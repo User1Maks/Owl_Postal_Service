@@ -1,18 +1,26 @@
-from django.shortcuts import render
 from django.urls import reverse, reverse_lazy
 from django.views.generic import (
     ListView,
     CreateView,
     DetailView,
     UpdateView,
-    DeleteView
+    DeleteView,
+    TemplateView
 )
 
+from mailing.forms import MessageForm, ClientForm, MailingForm
 from mailing.models import Client, Message, Mailing
 
 
-def index(request):
-    return render(request, 'base.html')
+class HomeTemplateView(TemplateView):
+    template_name = 'home.html'
+
+    # def get_context_data(self, **kwargs):
+    #     context = super().get_context_data(**kwargs)
+    #     context['clients'] = Client.objects.all()
+    #     context['messages'] = Message.objects.all()
+    #     context['mailings'] = Mailing.objects.all()
+    #     return context
 
 
 class ClientListView(ListView):
@@ -21,7 +29,7 @@ class ClientListView(ListView):
 
 class ClientCreateView(CreateView):
     model = Client
-    fields = '__all__'
+    form_class = ClientForm
     success_url = reverse_lazy('mailing:client_list')
 
 
@@ -31,8 +39,11 @@ class ClientDetailView(DetailView):
 
 class ClientUpdateView(UpdateView):
     model = Client
-    fields = '__all__'
-    success_url = reverse_lazy('mailing:client_list')
+    form_class = ClientForm
+
+    def get_success_url(self):
+        return reverse('mailing:client_detail',
+                       args=[self.kwargs.get('pk')])
 
 
 class ClientDeleteView(DeleteView):
@@ -46,19 +57,28 @@ class MessageListView(ListView):
 
 class MessageCreateView(CreateView):
     model = Message
-    fields = '__all__'
+    form_class = MessageForm
+    # fields = '__all__'
     success_url = reverse_lazy('mailing:message_list')
 
 
 class MessageDetailView(DetailView):
     model = Message
-    # permission_required = 'mailing.messages_detail'
+
+    def get_object(self, queryset=None):
+        self.object = super().get_object(queryset)
+        self.object.view_counter += 1
+        self.object.save()
+        return self.object
 
 
 class MessageUpdateView(UpdateView):
     model = Message
-    fields = '__all__'
-    success_url = reverse_lazy('mailing:message_list')
+    form_class = MessageForm
+
+    def get_success_url(self):
+        return reverse('mailing:message_detail',
+                       args=[self.kwargs.get('pk')])
 
 
 class MessageDeleteView(DeleteView):
@@ -72,7 +92,7 @@ class MailingListView(ListView):
 
 class MailingCreateView(CreateView):
     model = Mailing
-    fields = '__all__'
+    form_class = MailingForm
     success_url = reverse_lazy('mailing:mailing_list')
 
 
@@ -82,8 +102,11 @@ class MailingDetailView(DetailView):
 
 class MailingUpdateView(UpdateView):
     model = Mailing
-    fields = '__all__'
-    success_url = reverse_lazy('mailing:mailing_list')
+    form_class = MailingForm
+
+    def get_success_url(self):
+        return reverse('mailing:mailing_detail',
+                       args=[self.kwargs.get('pk')])
 
 
 class MailingDeleteView(DeleteView):

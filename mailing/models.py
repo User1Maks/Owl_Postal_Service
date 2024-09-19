@@ -51,6 +51,11 @@ class Message(models.Model):
     letter_body = models.TextField(verbose_name='Тело письма',
                                    help_text='Введите текст письма')
 
+    view_counter = models.PositiveIntegerField(
+        default=0,
+        editable=False,
+        verbose_name='Просмотров')
+
     def __str__(self):
         return f'{self.letter_subject}'
 
@@ -67,7 +72,7 @@ class Mailing(models.Model):
         help_text='Укажите название рассылки')
 
     datetime_first_mailing = models.DateTimeField(
-            verbose_name='Дата и время отправки рассылки')
+        verbose_name='Дата и время отправки рассылки')
 
     next_datetime_first_mailing = models.DateTimeField(
         verbose_name='Дата и время следующей отправки рассылки')

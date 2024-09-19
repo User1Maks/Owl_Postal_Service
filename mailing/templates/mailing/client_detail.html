@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'home.html' %}
 {% block content %}
 
 <div class="card">
@@ -11,20 +11,23 @@
         <p class="card-text">{{ object.a_comment }}</p>
         <p class="card-date">Дата рождения: {{ object.date_of_birth }}</p>
 
-        <a class="p-2 btn btn-primary mb-2"
-           href="{% url 'mailing:client_list' %}"
-           role="button"
-           style="margin-right: 10px;">Назад</a>
+        <div class="card-footer">
 
-        <a class="p-2 btn btn-warning mb-2"
-           href="{% url 'mailing:client_update' object.pk %}"
-           role="button"
-           style="margin-right: 10px;">Редактировать</a>
+            <a class="p-2 btn btn-primary mb-2"
+               href="{% url 'mailing:client_list' %}"
+               role="button"
+               style="margin-right: 10px;">Назад</a>
 
-        <a class="p-2 btn btn-danger mb-2"
-           href="{% url 'mailing:client_delete' object.pk %}"
-           role="button"
-           style="margin-right: 10px;">Удалить</a>
+            <a class="p-2 btn btn-warning mb-2"
+               href="{% url 'mailing:client_update' object.pk %}"
+               role="button"
+               style="margin-right: 10px;">Редактировать</a>
+
+            <a class="p-2 btn btn-danger mb-2"
+               href="{% url 'mailing:client_delete' object.pk %}"
+               role="button"
+               style="margin-right: 10px;">Удалить</a>
+        </div>
     </div>
 </div>
 
