@@ -1,4 +1,4 @@
-Django
+Django==4.2
 
 # Библиотека для защиты паролей
 python-dotenv

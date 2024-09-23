@@ -25,7 +25,7 @@ class ClientForm(StyleFormMixin, forms.ModelForm):
 class MessageForm(StyleFormMixin, forms.ModelForm):
     class Meta:
         model = Message
-        exclude = ('view_counter',)
+        exclude = ('view_counter', 'owner',)
 
     def clean_letter_subject(self):
         """Проверка темы письма на наличие запретных слов """
@@ -55,7 +55,7 @@ class MessageForm(StyleFormMixin, forms.ModelForm):
 class MailingForm(StyleFormMixin, forms.ModelForm):
     class Meta:
         model = Mailing
-        exclude = ('last_datetime_first_mailing',)
+        exclude = ('last_datetime_first_mailing', 'owner',)
 
     def clean_mailing_name(self):
         """Проверка названия рассылки на наличие запретных слов """

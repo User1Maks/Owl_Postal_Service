@@ -1,6 +1,6 @@
 from django.db import models
 
-NULLABLE = {'blank': True, 'null': True}
+from users.models import NULLABLE, User
 
 
 class Client(models.Model):
@@ -19,6 +19,8 @@ class Client(models.Model):
     date_of_birth = models.DateField(verbose_name='Дата рождения',
                                      **NULLABLE,
                                      help_text='Введите дату рождения')
+    owner = models.ForeignKey(User, on_delete=models.CASCADE,
+                              verbose_name='Пользователь')
 
     def __str__(self):
         return f'{self.email}'
@@ -55,6 +57,9 @@ class Message(models.Model):
         default=0,
         editable=False,
         verbose_name='Просмотров')
+
+    owner = models.ForeignKey(User, on_delete=models.CASCADE,
+                              verbose_name='Пользователь')
 
     def __str__(self):
         return f'{self.letter_subject}'
@@ -113,6 +118,9 @@ class Mailing(models.Model):
         verbose_name='Сообщение рассылки',
         related_name='settings_message',
     )
+
+    owner = models.ForeignKey(User, on_delete=models.CASCADE,
+                              verbose_name='Пользователь')
 
     def __str__(self):
         return f'{self.mailing_name}'

@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse, reverse_lazy
 from django.views.generic import (
     ListView,
@@ -27,10 +28,19 @@ class ClientListView(ListView):
     model = Client
 
 
-class ClientCreateView(CreateView):
+class ClientCreateView(LoginRequiredMixin, CreateView):
     model = Client
     form_class = ClientForm
     success_url = reverse_lazy('mailing:client_list')
+
+    def form_valid(self, form):
+        """Метод для добавления ссылки на модель пользователя, которая
+        заполняется автоматически"""
+        client = form.save(commit=False)
+        user = self.request.user
+        client.user = user
+        client.save()
+        return super().form_valid(form)
 
 
 class ClientDetailView(DetailView):
@@ -55,11 +65,19 @@ class MessageListView(ListView):
     model = Message
 
 
-class MessageCreateView(CreateView):
+class MessageCreateView(LoginRequiredMixin, CreateView):
     model = Message
     form_class = MessageForm
-    # fields = '__all__'
     success_url = reverse_lazy('mailing:message_list')
+
+    def form_valid(self, form):
+        """Метод для добавления ссылки на модель пользователя, которая
+        заполняется автоматически"""
+        message = form.save(commit=False)
+        user = self.request.user
+        message.user = user
+        message.save()
+        return super().form_valid(form)
 
 
 class MessageDetailView(DetailView):
@@ -90,10 +108,19 @@ class MailingListView(ListView):
     model = Mailing
 
 
-class MailingCreateView(CreateView):
+class MailingCreateView(LoginRequiredMixin, CreateView):
     model = Mailing
     form_class = MailingForm
     success_url = reverse_lazy('mailing:mailing_list')
+
+    def form_valid(self, form):
+        """Метод для добавления ссылки на модель пользователя, которая
+        заполняется автоматически"""
+        mailing = form.save(commit=False)
+        user = self.request.user
+        mailing.user = user
+        mailing.save()
+        return super().form_valid(form)
 
 
 class MailingDetailView(DetailView):

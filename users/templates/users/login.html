@@ -1,0 +1,32 @@
+{% extends 'home.html' %}
+{% block content %}
+
+
+<div class="container-sm col-md-8 mx-auto">
+    <form class="row" method="post" enctype="multipart/form-data">
+        <div class="col-8 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Вход</h2>
+                </div>
+
+                <div class="card-body">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+
+                    <button type="submit" class="btn btn-primary">Войти</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <hr>
+    <div class="text-center">
+        Забыли пароль? <a href="#">Сбросить
+        пароль</a>
+    </div>
+    <div class="text-center">
+        Нет аккаунта? <a
+            href="#">Зарегистрироваться</a>
+    </div>
+</div>
+{% endblock %}

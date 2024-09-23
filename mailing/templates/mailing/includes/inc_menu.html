@@ -16,18 +16,34 @@
                                href="/"
                                role="button">Главная</a>
                         </li>
-                        <li><a href="{% url 'mailing:mailing_list' %}"
-                               class="text-white">Рассылки</a>
+
+                        {% if user.is_authenticated %}
+
+                        <li><a class="text-white"
+                               href="{% url 'users:profile' %}"
+                               role="button">Профиль</a>
+
+                        <li><a class="text-white"
+                               href="{% url 'users:logout' %}"
+                               role="button">Выйти</a>
+
+                            {% else %}
+
+                        <li><a class="text-white"
+                               href="{% url 'users:login' %}"
+                               role="button">Войти</a>
                         </li>
-                        <li><a href="{% url 'mailing:client_list' %}"
-                               class="text-white">Клиенты</a></li>
-                        <li><a href="{% url 'mailing:message_list' %}"
-                               class="text-white">Сообщения</a>
+                        <li><a class="text-white"
+                               href="{% url 'users:register' %}"
+                               role="button">Регистрация</a>
                         </li>
-                        <li><a href="#"
-                               class="text-white">Зарегистрироваться</a></li>
-                        <li><a href="/admin/" class="text-white">Администрирование</a>
-                        </li>
+
+
+                        {% endif %}
+                        <li><a class="text-white"
+                               href="/admin/"
+                               role="button">Администрирование</a>
+
                     </ul>
                 </div>
             </div>
