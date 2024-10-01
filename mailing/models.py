@@ -1,3 +1,5 @@
+from datetime import timedelta
+
 from django.db import models
 
 from users.models import NULLABLE, User
@@ -15,7 +17,8 @@ class Client(models.Model):
                                   **NULLABLE, verbose_name='Отчество',
                                   help_text='Введите отчество')
     a_comment = models.TextField(verbose_name='Комментарий',
-                                 help_text='Введите комментарий')
+                                 help_text='Введите комментарий',
+                                 **NULLABLE)
     date_of_birth = models.DateField(verbose_name='Дата рождения',
                                      **NULLABLE,
                                      help_text='Введите дату рождения')
@@ -31,10 +34,10 @@ class Client(models.Model):
 
         # Сортировка
         ordering = [
-            'first_name',
             'last_name',
+            'first_name',
             'patronymic',
-            'date_of_birth',
+            'date_of_birth'
         ]
 
 
@@ -52,11 +55,6 @@ class Message(models.Model):
     )
     letter_body = models.TextField(verbose_name='Тело письма',
                                    help_text='Введите текст письма')
-
-    view_counter = models.PositiveIntegerField(
-        default=0,
-        editable=False,
-        verbose_name='Просмотров')
 
     owner = models.ForeignKey(User, on_delete=models.CASCADE,
                               verbose_name='Пользователь')
@@ -79,10 +77,11 @@ class Mailing(models.Model):
     datetime_first_mailing = models.DateTimeField(
         verbose_name='Дата и время отправки рассылки')
 
-    next_datetime_first_mailing = models.DateTimeField(
+    next_datetime_mailing = models.DateTimeField(
+        **NULLABLE,
         verbose_name='Дата и время следующей отправки рассылки')
 
-    last_datetime_first_mailing = models.DateTimeField(
+    last_datetime_mailing = models.DateTimeField(
         verbose_name='Дата и время последней отправки рассылки')
 
     period_mailing_choices = (
@@ -119,19 +118,40 @@ class Mailing(models.Model):
         related_name='settings_message',
     )
 
+    clients = models.ManyToManyField(
+        Client,
+        verbose_name='Клиенты',
+        related_name='settings_client'
+    )
+
     owner = models.ForeignKey(User, on_delete=models.CASCADE,
                               verbose_name='Пользователь')
 
     def __str__(self):
         return f'{self.mailing_name}'
 
+    # def save(self, *args, **kwargs):
+    #     """Метод для автоматического заполнения поля next_datetime_mailing
+    #     на время периодичности рассылки"""
+    #
+    #     if self.datetime_first_mailing and self.period_mailing:
+    #         self.next_datetime_mailing = (
+    #                 self.datetime_first_mailing +
+    #                 timedelta(minutes=self.period_mailing)
+    #         )
+    #     super().save(*args, **kwargs)
+
     class Meta:
         verbose_name = 'Рассылка'
         verbose_name_plural = 'Рассылки'
+        ordering = ['owner', 'mailing_status', 'next_datetime_mailing']
+        permissions = [
+            ('can_edit_mailing_status', 'Может отключать рассылки')
+        ]
 
 
 class MailingAttempt(models.Model):
-    """Попытки отправки письма"""
+    """Попытки отправки рассылки"""
     datetime_attempt = models.DateTimeField(
         auto_now_add=True,
         verbose_name='Дата и время попытки отправки',
@@ -146,20 +166,19 @@ class MailingAttempt(models.Model):
         null=True,
         editable=False
     )
-    mailing = models.ForeignKey(
-        Mailing,
-        on_delete=models.CASCADE,
-        verbose_name='Рассылка')
-
     client = models.ForeignKey(
         Client,
         on_delete=models.CASCADE,
-        verbose_name='Клиент'
+        verbose_name='Клиент')
+
+    mailing = models.ForeignKey(
+        Mailing,
+        on_delete=models.CASCADE,
+        verbose_name='Рассылка'
     )
 
     def __str__(self):
         return (f'Попытка рассылки {self.pk} - {self.mailing} '
-                f'от {self.datetime_attempt} для клиента {self.client} '
                 f'{self.attempt_status}')
 
     class Meta:

@@ -38,4 +38,9 @@ class User(AbstractUser):
     class Meta:
         verbose_name = 'Пользователь'
         verbose_name_plural = 'Пользователи'
+        permissions = [
+            ('can_edit_is_active_users',
+             'Может блокировать пользователей сервиса'),
 
+            ('can_edit_is_active_mailing', 'Может отключать рассылки')
+        ]

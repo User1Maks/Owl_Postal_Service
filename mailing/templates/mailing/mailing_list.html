@@ -1,28 +1,50 @@
 {% extends 'mailing/mailing_base.html' %}
 {% block content %}
 
+<div class="card-container" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+    {% for object in object_list %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{ object.mailing_name }}</h5>
+            <p class="card-text">{{ object.message }}</p>
 
-{% for object in object_list %}
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <h5 class="card-title">{{ object.mailing_name }}</h5>
-        <p class="card-text">{{ object.message }}</p>
-        <div class="card-footer">
-            <a class="btn btn-primary mb-2"
-               href="{% url 'mailing:mailing_detail' object.pk %}"
-               role="button">Открыть</a>
+            <div class="card-footer">
 
-            <a class="p-2 btn btn-warning mb-2"
-               href="{% url 'mailing:mailing_update' object.pk %}"
-               role="button">Редактировать</a>
+                {% if perms.mailing.view_mailing %}
+                <a class="btn btn-primary mb-2"
+                   href="{% url 'mailing:mailing_detail' object.pk %}"
+                   role="button">Открыть</a>
+                {% endif %}
 
-            <a class="p-2 btn btn-danger mb-2"
-               href="{% url 'mailing:mailing_delete' object.pk %}"
-               role="button">Удалить</a>
+                  {% if perms.mailing.view_mailing %}
+                <a class="btn btn-success mb-2"
+                   href="#"
+                   role="button">Активировать</a>
+                {% endif %}
+
+                {% if perms.mailing.view_mailing %}
+                <a class="btn btn-warning mb-2"
+                   href="#"
+                   role="button">Отключить</a>
+                {% endif %}
+
+                {% if perms.mailing.change_mailing %}
+                <a class="p-2 btn btn-warning mb-2"
+                   href="{% url 'mailing:mailing_update' object.pk %}"
+                   role="button">Редактировать</a>
+                {% endif %}
+
+                {% if perms.mailing.delete_mailing %}
+                <a class="p-2 btn btn-danger mb-2"
+                   href="{% url 'mailing:mailing_delete' object.pk %}"
+                   role="button">Удалить</a>
+                {% endif %}
+            </div>
         </div>
     </div>
+    {% endfor %}
 </div>
-{% endfor %}
+
 {% endblock %}
 
 

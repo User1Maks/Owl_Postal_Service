@@ -55,7 +55,15 @@ class MessageForm(StyleFormMixin, forms.ModelForm):
 class MailingForm(StyleFormMixin, forms.ModelForm):
     class Meta:
         model = Mailing
-        exclude = ('last_datetime_first_mailing', 'owner',)
+        fields = (
+            'mailing_name', 'datetime_first_mailing', 'last_datetime_mailing',
+            'period_mailing', 'message', 'clients',)
+        widgets = {
+            'datetime_first_mailing': forms.DateTimeInput(
+                attrs={'type': 'datetime-local'}),
+            'last_datetime_mailing': forms.DateTimeInput(
+                attrs={'type': 'datetime-local'})
+        }
 
     def clean_mailing_name(self):
         """Проверка названия рассылки на наличие запретных слов """

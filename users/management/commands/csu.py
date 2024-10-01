@@ -12,9 +12,9 @@ class Command(BaseCommand):
             email='admin@example.com',
             first_name='Admin',
             last_name='Adminov',
-            is_staff=True,
-            is_superuser=True,
-            is_active=True
+            is_staff=True,  # Только для персонала
+            is_superuser=True,  # Только для администратора
+            is_active=True  # Только для активного пользователя
         )
 
         user.set_password('pass')

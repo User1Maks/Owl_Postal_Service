@@ -8,9 +8,9 @@
         <p class="card-text">Дата и время отправки рассылки:
             {{object.datetime_first_mailing}}</p>
         <p class="card-text">Дата и время следующей отправки рассылки:
-            {{ object.next_datetime_first_mailing }}</p>
+            {{ object.next_datetime_mailing }}</p>
         <p class="card-text">Дата и время последней отправки рассылки:
-            {{ object.last_datetime_first_mailing }}</p>
+            {{ object.last_datetime_mailing }}</p>
         <p class="card-text">Период рассылки: {{ object.period_mailing }}</p>
         <p class="card-date">Статус рассылки: {{ object.mailing_status }}</p>
         <p class="card-date">Сообщение рассылки: {{object.message}}</p>
@@ -26,6 +26,11 @@
                href="{% url 'mailing:mailing_update' object.pk %}"
                role="button"
                style="margin-right: 10px;">Редактировать</a>
+
+            <a class="btn btn-warning mb-2"
+               href="#"
+               role="button"
+               style="margin-right: 10px;">Отключить</a>
 
             <a class="p-2 btn btn-danger mb-2"
                href="{% url 'mailing:mailing_delete' object.pk %}"

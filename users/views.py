@@ -1,8 +1,13 @@
 import secrets
-from django.shortcuts import render
+from django.contrib.auth.mixins import (
+    LoginRequiredMixin,
+    PermissionRequiredMixin,
+    UserPassesTestMixin
+)
+from django.core.exceptions import PermissionDenied
 from django.urls import reverse_lazy, reverse
-from django.views.generic import CreateView, UpdateView
-from users.forms import UserRegisterForm, UserProfileForm
+from django.views.generic import CreateView, UpdateView, DeleteView
+from users.forms import UserRegisterForm, UserProfileForm, UserModeratorForm
 from users.models import User
 from config.settings import EMAIL_HOST_USER
 from django.core.mail import send_mail
@@ -44,12 +49,29 @@ def email_verification(request, token):
     return redirect(reverse('users:login'))
 
 
-class ProfileView(UpdateView):
+class ProfileView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     """Контролер для редактирования профиля пользователя"""
 
     model = User
     form_class = UserProfileForm
+    permission_required = 'users.change_profile'
     success_url = reverse_lazy('users:profile')
 
     def get_object(self, queryset=None):
         return self.request.user
+
+    def get_form_class(self):
+        user = self.request.user
+        if user.has_perm('users.can_edit_is_active_users') and user.has_perm(
+                'can_edit_is_active_mailing'):
+            return UserModeratorForm
+        raise PermissionDenied
+
+
+# class UserDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+#     """Контролер для удаления пользователя"""
+#     model = User
+#     success_url = reverse_lazy('users:profile')
+#
+#     def test_func(self):
+#         return self.request.user.is_superuser

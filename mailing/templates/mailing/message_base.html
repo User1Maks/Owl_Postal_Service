@@ -57,9 +57,14 @@
         <div class="container">
             <h1>Сообщения</h1>
             <p class="lead text-muted">Здесь отображен список сообщений, которые
-            доступны для рассылки </p>
+                доступны для рассылки </p>
             <p>
-                <a href="{% url 'mailing:message_create' %}" class="btn btn-primary my-2">Создать сообщение</a>
+
+                {% if perms.mailing.add_message %}
+                <a href="{% url 'mailing:message_create' %}"
+                   class="btn btn-primary my-2">Создать сообщение</a>
+                {% endif %}
+
                 <a href="/" class="btn btn-secondary my-2">На главную</a>
             </p>
         </div>

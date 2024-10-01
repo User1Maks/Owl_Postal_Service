@@ -40,9 +40,12 @@
 
 
                         {% endif %}
+
+                        {% if user.is_superuser %}
                         <li><a class="text-white"
                                href="/admin/"
                                role="button">Администрирование</a>
+                        {% endif %}
 
                     </ul>
                 </div>

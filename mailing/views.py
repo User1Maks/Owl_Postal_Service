@@ -1,4 +1,8 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import (
+    LoginRequiredMixin,
+    PermissionRequiredMixin,
+    UserPassesTestMixin
+)
 from django.urls import reverse, reverse_lazy
 from django.views.generic import (
     ListView,
@@ -24,13 +28,15 @@ class HomeTemplateView(TemplateView):
     #     return context
 
 
-class ClientListView(ListView):
+class ClientListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
     model = Client
+    permission_required = 'mailing.view_client'
 
 
-class ClientCreateView(LoginRequiredMixin, CreateView):
+class ClientCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     model = Client
     form_class = ClientForm
+    permission_required = 'mailing.add_client'
     success_url = reverse_lazy('mailing:client_list')
 
     def form_valid(self, form):
@@ -43,31 +49,40 @@ class ClientCreateView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
-class ClientDetailView(DetailView):
+class ClientDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
     model = Client
+    permission_required = 'mailing.view_client'
 
 
-class ClientUpdateView(UpdateView):
+class ClientUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     model = Client
     form_class = ClientForm
+    permission_required = 'mailing.change_client'
 
     def get_success_url(self):
         return reverse('mailing:client_detail',
                        args=[self.kwargs.get('pk')])
 
 
-class ClientDeleteView(DeleteView):
+class ClientDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Client
+    # permission_required = 'mailing.delete_client'
     success_url = reverse_lazy('mailing:client_list')
 
+    def test_func(self):
+        return self.request.user.is_superuser
 
-class MessageListView(ListView):
+
+class MessageListView(PermissionRequiredMixin, ListView):
     model = Message
+    permission_required = 'mailing.view_message'
 
 
-class MessageCreateView(LoginRequiredMixin, CreateView):
+class MessageCreateView(LoginRequiredMixin, PermissionRequiredMixin,
+                        CreateView):
     model = Message
     form_class = MessageForm
+    permission_required = 'mailing.add_message'
     success_url = reverse_lazy('mailing:message_list')
 
     def form_valid(self, form):
@@ -80,37 +95,46 @@ class MessageCreateView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
-class MessageDetailView(DetailView):
+class MessageDetailView(LoginRequiredMixin, PermissionRequiredMixin,
+                        DetailView):
     model = Message
+    permission_required = 'mailing.view_message'
 
-    def get_object(self, queryset=None):
-        self.object = super().get_object(queryset)
-        self.object.view_counter += 1
-        self.object.save()
-        return self.object
+    # def get_object(self, queryset=None):
+    #     self.object = super().get_object(queryset)
+    #     self.object.view_counter += 1
+    #     self.object.save()
+    #     return self.object
 
 
-class MessageUpdateView(UpdateView):
+class MessageUpdateView(LoginRequiredMixin, PermissionRequiredMixin,
+                        UpdateView):
     model = Message
     form_class = MessageForm
+    permission_required = 'mailing.change_message'
 
     def get_success_url(self):
         return reverse('mailing:message_detail',
                        args=[self.kwargs.get('pk')])
 
 
-class MessageDeleteView(DeleteView):
+class MessageDeleteView(LoginRequiredMixin, PermissionRequiredMixin,
+                        DeleteView):
     model = Message
+    permission_required = 'mailing.delete_message'
     success_url = reverse_lazy('mailing:message_list')
 
 
-class MailingListView(ListView):
+class MailingListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
     model = Mailing
+    permission_required = 'mailing.view_mailing'
 
 
-class MailingCreateView(LoginRequiredMixin, CreateView):
+class MailingCreateView(LoginRequiredMixin, PermissionRequiredMixin,
+                        CreateView):
     model = Mailing
     form_class = MailingForm
+    permission_required = 'mailing.add_mailing'
     success_url = reverse_lazy('mailing:mailing_list')
 
     def form_valid(self, form):
@@ -118,23 +142,38 @@ class MailingCreateView(LoginRequiredMixin, CreateView):
         заполняется автоматически"""
         mailing = form.save(commit=False)
         user = self.request.user
-        mailing.user = user
+        mailing.owner = user
+        mailing.next_datetime_mailing = mailing.datetime_first_mailing
+        mailing.mailing_status = 0
         mailing.save()
         return super().form_valid(form)
 
 
-class MailingDetailView(DetailView):
+class MailingDetailView(LoginRequiredMixin, PermissionRequiredMixin,
+                        DetailView):
     model = Mailing
+    permission_required = 'mailing.view_mailing'
 
 
-class MailingUpdateView(UpdateView):
+class MailingUpdateView(LoginRequiredMixin, PermissionRequiredMixin,
+                        UpdateView):
     model = Mailing
     form_class = MailingForm
+    permission_required = 'mailing.change_mailing'
 
     def get_success_url(self):
         return reverse('mailing:mailing_detail',
                        args=[self.kwargs.get('pk')])
 
+    def form_valid(self, form):
+        mailing = form.save(commit=False)
+        mailing.next_datetime_mailing = mailing.datetime_first_mailing
+        mailing.save()
+        return super().form_valid(form)
 
-class MailingDeleteView(DeleteView):
+
+class MailingDeleteView(LoginRequiredMixin, PermissionRequiredMixin,
+                        DeleteView):
     model = Mailing
+    permission_required = 'mailing.delete_mailing'
+    success_url = reverse_lazy('mailing:mailing_list')
