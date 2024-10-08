@@ -130,23 +130,12 @@ class Mailing(models.Model):
     def __str__(self):
         return f'{self.mailing_name}'
 
-    # def save(self, *args, **kwargs):
-    #     """Метод для автоматического заполнения поля next_datetime_mailing
-    #     на время периодичности рассылки"""
-    #
-    #     if self.datetime_first_mailing and self.period_mailing:
-    #         self.next_datetime_mailing = (
-    #                 self.datetime_first_mailing +
-    #                 timedelta(minutes=self.period_mailing)
-    #         )
-    #     super().save(*args, **kwargs)
-
     class Meta:
         verbose_name = 'Рассылка'
         verbose_name_plural = 'Рассылки'
         ordering = ['owner', 'mailing_status', 'next_datetime_mailing']
         permissions = [
-            ('can_edit_mailing_status', 'Может отключать рассылки')
+            ('can_disable_mailing_status', 'Может отключать рассылки')
         ]
 
 

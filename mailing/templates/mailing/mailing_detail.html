@@ -15,6 +15,11 @@
         <p class="card-date">Статус рассылки: {{ object.mailing_status }}</p>
         <p class="card-date">Сообщение рассылки: {{object.message}}</p>
 
+        {% if perms.mailing.can_disable_mailing_status or perms.users.can_edit_is_active_users %}
+        <h6 class="card-date">Владелец рассылки: {{object.owner}}</h6>
+        {% endif %}
+
+
         <div class="card-footer">
 
             <a class="p-2 btn btn-primary mb-2"
@@ -22,20 +27,26 @@
                role="button"
                style="margin-right: 10px;">Назад</a>
 
+            {% if user == object.owner %}
+
             <a class="p-2 btn btn-warning mb-2"
                href="{% url 'mailing:mailing_update' object.pk %}"
                role="button"
                style="margin-right: 10px;">Редактировать</a>
+
+            <a class="p-2 btn btn-danger mb-2"
+               href="{% url 'mailing:mailing_delete' object.pk %}"
+               role="button"
+               style="margin-right: 10px;">Удалить</a>
+
+            {% endif %}
 
             <a class="btn btn-warning mb-2"
                href="#"
                role="button"
                style="margin-right: 10px;">Отключить</a>
 
-            <a class="p-2 btn btn-danger mb-2"
-               href="{% url 'mailing:mailing_delete' object.pk %}"
-               role="button"
-               style="margin-right: 10px;">Удалить</a>
+
         </div>
     </div>
 </div>

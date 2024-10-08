@@ -44,7 +44,7 @@ class ClientCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
         заполняется автоматически"""
         client = form.save(commit=False)
         user = self.request.user
-        client.user = user
+        client.owner = user
         client.save()
         return super().form_valid(form)
 
@@ -73,7 +73,7 @@ class ClientDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         return self.request.user.is_superuser
 
 
-class MessageListView(PermissionRequiredMixin, ListView):
+class MessageListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
     model = Message
     permission_required = 'mailing.view_message'
 
@@ -90,7 +90,7 @@ class MessageCreateView(LoginRequiredMixin, PermissionRequiredMixin,
         заполняется автоматически"""
         message = form.save(commit=False)
         user = self.request.user
-        message.user = user
+        message.owner = user
         message.save()
         return super().form_valid(form)
 

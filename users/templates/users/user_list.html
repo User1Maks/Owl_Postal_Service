@@ -1,0 +1,26 @@
+{% extends 'users/user_base.html' %}
+{% block content %}
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">email</th>
+        <th scope="col">Телефон</th>
+        <th scope="col">Страна</th>
+
+    </tr>
+    </thead>
+    {% for object in object_list %}
+    <tbody>
+    <tr>
+        <th scope="row">{{ object.pk }}</th>
+        <td> {{object.email }}</td>
+        <td>{{ object.phone }}</td>
+        <td>{{ object.a_country }}</td>
+    </tr>
+    </tbody>
+    {% endfor %}
+</table>
+
+{% endblock %}

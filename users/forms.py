@@ -29,4 +29,4 @@ class UserProfileForm(StyleFormMixin, UserChangeForm):
 class UserModeratorForm(StyleFormMixin, ModelForm):
     class Meta:
         model = User
-        fields = ('is_active', )
+        fields = '__all__'

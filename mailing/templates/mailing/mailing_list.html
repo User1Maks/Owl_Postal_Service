@@ -4,6 +4,8 @@
 <div class="card-container" style="display: flex; gap: 1rem; flex-wrap: wrap;">
     {% for object in object_list %}
     <div class="card" style="width: 18rem;">
+
+        {% if user == object.owner or perms.mailing.can_disable_mailing_status and perms.users.can_edit_is_active_users %}
         <div class="card-body">
             <h5 class="card-title">{{ object.mailing_name }}</h5>
             <p class="card-text">{{ object.message }}</p>
@@ -16,11 +18,11 @@
                    role="button">Открыть</a>
                 {% endif %}
 
-                  {% if perms.mailing.view_mailing %}
-                <a class="btn btn-success mb-2"
-                   href="#"
-                   role="button">Активировать</a>
-                {% endif %}
+<!--                {% if perms.mailing.view_mailing %}-->
+<!--                <a class="btn btn-success mb-2"-->
+<!--                   href="#"-->
+<!--                   role="button">Активировать</a>-->
+<!--                {% endif %}-->
 
                 {% if perms.mailing.view_mailing %}
                 <a class="btn btn-warning mb-2"
@@ -39,8 +41,10 @@
                    href="{% url 'mailing:mailing_delete' object.pk %}"
                    role="button">Удалить</a>
                 {% endif %}
+
             </div>
         </div>
+        {% endif %}
     </div>
     {% endfor %}
 </div>

@@ -76,11 +76,11 @@
     "pk": 1,
     "fields": {
         "mailing_name": "Туризм",
-        "datetime_first_mailing": "2024-09-18T10:30:57Z",
-        "next_datetime_mailing": "2024-09-18T10:31:01Z",
-        "last_datetime_mailing": "2024-09-18T10:31:04Z",
+        "datetime_first_mailing": "2024-10-01T17:27:00Z",
+        "next_datetime_mailing": "2024-10-01T17:29:00Z",
+        "last_datetime_mailing": "2024-10-01T17:30:00Z",
         "period_mailing": 1,
-        "mailing_status": 0,
+        "mailing_status": 3,
         "message": 1,
         "owner": 1,
         "clients": [

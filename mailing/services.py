@@ -1,6 +1,6 @@
 import pytz
 from django.conf import settings
-from datetime import datetime
+from datetime import datetime, timezone
 from smtplib import SMTPException
 from datetime import timedelta
 from django.core.mail import send_mail
@@ -22,18 +22,18 @@ def send_mailing():
     current_datetime = get_datetime()
 
     # Фильтруем рассылки по статусу "Создана"
-    mailings_1 = Mailing.objects.filter(mailing_status=0)
+    mailings = Mailing.objects.filter(mailing_status=0)
 
-    for mailing in mailings_1:
+    for mailing in mailings:
         if mailing.datetime_first_mailing <= current_datetime:
             mailing.mailing_status = 1  # Переключаем статут на "Запущено"
             mailing.save()
 
-    mailings = Mailing.objects.filter(
+    mailings_1 = Mailing.objects.filter(
         datetime_first_mailing__lte=current_datetime).filter(
         mailing_status__in=[1])
 
-    for mailing in mailings:
+    for mailing in mailings_1:
 
         # Увеличиваем время следующей рассылки на ее периодичность
         # mailing.next_datetime_mailing = mailing.datetime_first_mailing
@@ -46,31 +46,35 @@ def send_mailing():
             mailing.mailing_status = 3
         mailing.save()
 
-    # Проходим по всем клиентам, которым нужно отправить рассылку
-    for client in mailing.clients.all():
-        try:
-            # Отправка письма
-            server_response = send_mail(
-                subject=mailing.message.letter_subject,
-                message=mailing.message.letter_body,
-                from_email=settings.EMAIL_HOST_USER,
-                recipient_list=[client.email],
-                fail_silently=False,
-            )
+        # Если рассылка не была найдена, пропускаем дальнейшие действия
+        if mailing is False:
+            continue
 
-            # Создаем объект попытки отправки рассылки
-            MailingAttempt.objects.create(
-                mailing=mailing,  # Указываем рассылку
-                client=client,  # Указываем клиента
-                service_response=str(server_response),  # Ответ сервера
-                attempt_status=True  # Письмо отправлено успешно
-            )
+        # Проходим по всем клиентам, которым нужно отправить рассылку
+        for client in mailing.clients.all():
+            try:
+                # Отправка письма
+                server_response = send_mail(
+                    subject=mailing.message.letter_subject,
+                    message=mailing.message.letter_body,
+                    from_email=settings.EMAIL_HOST_USER,
+                    recipient_list=[client.email],
+                    fail_silently=False,
+                )
 
-        except SMTPException as e:
-            # Если произошла ошибка при отправке письма
-            MailingAttempt.objects.create(
-                mailing=mailing,  # Указываем рассылку
-                client=client,  # Указываем клиента
-                service_response=str(e),  # Ответ сервера с ошибкой
-                attempt_status=False  # Письмо не отправлено
-            )
+                # Создаем объект попытки отправки рассылки
+                MailingAttempt.objects.create(
+                    mailing=mailing,  # Указываем рассылку
+                    client=client,  # Указываем клиента
+                    service_response=str(server_response),  # Ответ сервера
+                    attempt_status=True  # Письмо отправлено успешно
+                )
+
+            except SMTPException as e:
+                # Если произошла ошибка при отправке письма
+                MailingAttempt.objects.create(
+                    mailing=mailing,  # Указываем рассылку
+                    client=client,  # Указываем клиента
+                    service_response=str(e),  # Ответ сервера с ошибкой
+                    attempt_status=False  # Письмо не отправлено
+                )

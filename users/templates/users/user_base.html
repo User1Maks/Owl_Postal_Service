@@ -52,37 +52,13 @@
 {% include 'mailing/includes/inc_menu.html' %}
 
 <main role="main">
+
     <section class="jumbotron text-center">
         <div class="container">
-            <h1>СОВА</h1>
-            <p class="lead text-muted">Превратите свои цели в реальность с нашим
-                мощным и легким в использовании сервисом рассылок</p>
+            <h1>Пользователи</h1>
+            <p class="lead text-muted">Список пользователей сервиса  </p>
             <p>
-
-                {% if user.is_authenticated and perms.mailing.view_client %}
-                <a class="btn btn-primary my-2"
-                   href="{% url 'mailing:client_list' %}"
-                   role="button">Клиенты</a>
-                {% endif %}
-
-                {% if user.is_authenticated and perms.users.view_user %}
-                <a class="btn btn-primary my-2"
-                   href="{% url 'users:user_list' %}"
-                   role="button">Пользователи</a>
-                {% endif %}
-
-                {% if user.is_authenticated and perms.mailing.view_message %}
-                <a class="btn btn-primary my-2"
-                   href="{% url 'mailing:message_list' %}"
-                   role="button">Сообщения</a>
-                {% endif %}
-
-                {% if user.is_authenticated and perms.mailing.view_mailing %}
-                <a class="btn btn-primary my-2"
-                   href="{% url 'mailing:mailing_list' %}"
-                   role="button">Рассылки</a>
                 <a href="/" class="btn btn-secondary my-2">На главную</a>
-                {% endif %}
             </p>
         </div>
     </section>

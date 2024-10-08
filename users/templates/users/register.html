@@ -14,7 +14,8 @@
                     {% csrf_token %}
                     {{ form.as_p }}
 
-                    <button type="submit" class="btn btn-primary">
+                    <button class="btn btn-primary"
+                            href="{% url 'users:register' %}">
                         Зарегистрироваться
                     </button>
                 </div>

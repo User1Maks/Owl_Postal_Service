@@ -13,6 +13,7 @@
         <th scope="col">Дата рождения</th>
     </tr>
     </thead>
+    {% if user == object.owner or perms.mailing.can_disable_mailing_status and perms.users.can_edit_is_active_users %}
     {% for object in object_list %}
     <tbody>
     <tr>
@@ -29,6 +30,7 @@
     </tr>
     </tbody>
     {% endfor %}
+    {% endif %}
 </table>
 
 {% endblock %}
