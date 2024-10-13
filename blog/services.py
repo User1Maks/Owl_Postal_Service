@@ -1,6 +1,9 @@
+import random
+
 from blog.models import Blog
 from django.core.cache import cache
 from django.conf import settings
+
 
 
 def get_cached_blog(blog_slug):
@@ -19,3 +22,14 @@ def get_cached_blog(blog_slug):
         # Если кеш выключен, получаем данные из БД
         blog_list = Blog.objects.filter(slug=blog_slug)
     return blog_list
+
+
+def random_blog_articles(request):
+    """Возвращает 3 случайные статьи"""
+    # Получаем все статьи
+    all_articles = list(Blog.objects.all())
+    num_articles = min(3, len(all_articles))
+    # Получаем 3 случайные статьи
+    random_articles = random.sample(all_articles, num_articles)
+
+    return random_articles

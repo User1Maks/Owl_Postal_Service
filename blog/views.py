@@ -29,12 +29,12 @@ class BlogDetailView(DetailView):
         self.object.save()
         return self.object
 
-    def get_context_data(self, **kwargs):
-        """Кеширование статей отображаемых в 'blog_detail.html' """
-
-        context_data = super().get_context_data(**kwargs)
-        context_data['blog_detail'] = get_cached_blog(self.object.slug)
-        return context_data
+    # def get_context_data(self, **kwargs):
+    #     """Кеширование статей отображаемых в 'blog_detail.html' """
+    #
+    #     context_data = super().get_context_data(**kwargs)
+    #     context_data['blog_detail'] = get_cached_blog(self.object.slug)
+    #     return context_data
 
 
 class BlogCreateView(LoginRequiredMixin, UserPassesTestMixin, CreateView):

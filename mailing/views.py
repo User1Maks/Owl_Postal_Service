@@ -13,12 +13,34 @@ from django.views.generic import (
     TemplateView
 )
 
+from blog.services import random_blog_articles
 from mailing.forms import MessageForm, ClientForm, MailingForm
 from mailing.models import Client, Message, Mailing
 
 
 class HomeTemplateView(TemplateView):
     template_name = 'home.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['random_articles'] = random_blog_articles(context)
+
+        # Получаем данные о рассылках и клиентах
+        # Общее количество рассылок
+        number_of_mailings = Mailing.objects.all().count()
+
+        # Количество активных рассылок
+        active_mailings = Mailing.objects.filter(mailing_status=1).count()
+
+        # Количество уникальных клиентов
+        unique_clients = Client.objects.distinct().count()
+
+        context['number_of_mailings'] = number_of_mailings
+        context['active_mailings'] = active_mailings
+        context['unique_clients'] = unique_clients
+
+        return context
+
 
     # def get_context_data(self, **kwargs):
     #     context = super().get_context_data(**kwargs)
