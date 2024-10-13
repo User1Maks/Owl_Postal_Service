@@ -13,7 +13,8 @@ from django.views.generic import (
     CreateView,
     UpdateView,
     DeleteView,
-    ListView
+    ListView,
+    DetailView
 )
 from users.forms import UserRegisterForm, UserProfileForm, UserModeratorForm
 from users.models import User
@@ -86,6 +87,12 @@ def email_verification(request, token):
     return redirect(reverse('users:login'))
 
 
+class UserDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
+    """Контролер для просмотра информации о пользователе"""
+    model = User
+    permission_required = 'users.view_user'
+
+
 class ProfileView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     """Контролер для редактирования профиля пользователя"""
 
@@ -104,10 +111,11 @@ class ProfileView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
             return UserModeratorForm
         raise PermissionDenied
 
-# class UserDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
-#     """Контролер для удаления пользователя"""
-#     model = User
-#     success_url = reverse_lazy('users:profile')
-#
-#     def test_func(self):
-#         return self.request.user.is_superuser
+
+class UserDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """Контролер для удаления пользователя"""
+    model = User
+    success_url = reverse_lazy('users:profile')
+
+    def test_func(self):
+        return self.request.user.is_superuser
