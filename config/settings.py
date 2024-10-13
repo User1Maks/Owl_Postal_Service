@@ -121,3 +121,12 @@ SERVER_EMAIL = EMAIL_HOST_USER
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 LOGIN_URL = "/"
 
+# Для вкл./откл. кеша в приложении
+CACHES_ENABLED = True
+if CACHES_ENABLED:
+    CACHES = {
+        "default": {
+            "BACKEND": "django.core.cache.backends.redis.RedisCache",
+            "LOCATION": os.getenv("CACHE_LOCATION")
+        }
+    }

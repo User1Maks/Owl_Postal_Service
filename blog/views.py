@@ -10,11 +10,12 @@ from django.views.generic import (
 
 from blog.forms import BlogForm
 from blog.models import Blog
+from blog.services import get_cached_blog
 
 
 class BlogListView(ListView):
     model = Blog
-    template_name = 'blog_list.html'
+    template_name = 'blog/blog_list.html'
 
 
 class BlogDetailView(DetailView):
@@ -27,6 +28,13 @@ class BlogDetailView(DetailView):
         self.object.views_count += 1
         self.object.save()
         return self.object
+
+    def get_context_data(self, **kwargs):
+        """Кеширование статей отображаемых в 'blog_detail.html' """
+
+        context_data = super().get_context_data(**kwargs)
+        context_data['blog_detail'] = get_cached_blog(self.object.slug)
+        return context_data
 
 
 class BlogCreateView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
