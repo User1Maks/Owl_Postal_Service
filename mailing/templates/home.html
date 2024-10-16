@@ -105,11 +105,11 @@
         <div class="container">
             <h2>Статьи из блога СОВА</h2>
             <ul>
-                {% for article in random_articles %}
+                {% for object in random_articles %}
                 <li>
-                    <h3>{{ article.title }}</h3>
-                    <p>{{ article.content|truncatewords:20 }}</p>
-                    <a href="{% url 'blog:blog_detail' article.id %}">Читать
+                    <h3>{{ object.title }}</h3>
+                    <p>{{ object.content|truncatewords:20 }}</p>
+                    <a href="{% url 'blog:blog_detail' object.slug %}">Читать
                         далее</a>
                 </li>
                 {% empty %}
@@ -119,7 +119,7 @@
 
             <h2>Статистика рассылок</h2>
             <ul>
-                <li>Общее количество рассылок: {{ total_mailings }}</li>
+                <li>Общее количество рассылок: {{ number_of_mailings }}</li>
                 <li>Количество активных рассылок: {{ active_mailings }}</li>
                 <li>Количество уникальных клиентов: {{ unique_clients }}</li>
             </ul>

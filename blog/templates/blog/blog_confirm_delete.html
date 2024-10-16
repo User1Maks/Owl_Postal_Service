@@ -1,0 +1,27 @@
+{% extends 'blog/blog_detail.html' %}
+{% block blog %}
+
+
+<div class="container-sm col-md-8 mx-auto">
+    <div class="row">
+        <div class="col-8 mx-auto">
+            <form class="row" method="post" enctype="multipart/form-data">
+                <div class="card">
+                    <p class="card-text">Действительно хотите удалить
+                        {{object.title}} ?</p>
+                    <div class="card-body">
+                        {% csrf_token %}
+                    </div>
+                    <button type="submit" class="p-2 btn btn-danger">
+                        Удалить
+                    </button>
+                    <a class="btn btn-primary"
+                       href="{% url 'blog:blog_base'%}"
+                       role="button">Отменить</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -9,6 +9,7 @@ from users.views import (
     email_verification,
     UserListView
 )
+from django.views.decorators.cache import cache_page
 
 app_name = UsersConfig.name
 
@@ -19,7 +20,8 @@ urlpatterns = [
          name='logout'),
     path('register/', UserCreateView.as_view(), name='register'),
     path('profile/', ProfileView.as_view(), name='profile'),
-    path('email-confirm/<str:token>/', email_verification, name='email-confirm'),
+    path('email-confirm/<str:token>/', email_verification,
+         name='email-confirm'),
     path('list/', UserListView.as_view(), name='user_list')
 
 ]

@@ -17,11 +17,11 @@
 
         {% if user.is_authenticated %}
         <a class="p-2 btn btn-warning ms-auto"
-           href="#"
+           href="{% url 'blog:blog_update' object.slug %}"
            role="button">Редактировать</a>
 
         <a class="p-2 btn btn-danger ms-auto"
-           href="#"
+           href="{% url 'blog:blog_delete' object.slug %}"
            role="button">Удалить</a>
         {% endif %}
     </div>

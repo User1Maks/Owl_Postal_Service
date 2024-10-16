@@ -1,3 +1,5 @@
+from venv import logger
+
 from django.contrib.auth.mixins import (
     LoginRequiredMixin,
     PermissionRequiredMixin,
@@ -23,31 +25,39 @@ class HomeTemplateView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['random_articles'] = random_blog_articles(context)
+        try:
+            context['random_articles'] = random_blog_articles(context)
+        except AttributeError as err:
+            logger.error(err)
+            context['random_articles'] = []
 
         # Получаем данные о рассылках и клиентах
-        # Общее количество рассылок
-        number_of_mailings = Mailing.objects.all().count()
+        try:
+            # Общее количество рассылок
+            number_of_mailings = Mailing.objects.all().count()
+        except AttributeError as err:
+            logger.error(err)
+            number_of_mailings = 0
 
-        # Количество активных рассылок
-        active_mailings = Mailing.objects.filter(mailing_status=1).count()
+        try:
+            # Количество активных рассылок
+            active_mailings = Mailing.objects.filter(mailing_status=1).count()
+        except AttributeError as err:
+            logger.error(err)
+            active_mailings = 0
 
-        # Количество уникальных клиентов
-        unique_clients = Client.objects.distinct().count()
+        try:
+            # Количество уникальных клиентов
+            unique_clients = Client.objects.distinct().count()
+        except AttributeError as err:
+            logger.error(err)
+            unique_clients = 0
 
         context['number_of_mailings'] = number_of_mailings
         context['active_mailings'] = active_mailings
         context['unique_clients'] = unique_clients
 
         return context
-
-
-    # def get_context_data(self, **kwargs):
-    #     context = super().get_context_data(**kwargs)
-    #     context['clients'] = Client.objects.all()
-    #     context['messages'] = Message.objects.all()
-    #     context['mailings'] = Mailing.objects.all()
-    #     return context
 
 
 class ClientListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):

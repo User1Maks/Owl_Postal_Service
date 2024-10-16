@@ -5,7 +5,6 @@ from django.core.cache import cache
 from django.conf import settings
 
 
-
 def get_cached_blog(blog_slug):
     """Кеширование статей отображаемых в 'blog_detail.html' """
 

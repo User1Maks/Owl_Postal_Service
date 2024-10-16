@@ -10,8 +10,8 @@ class Blog(models.Model):
     """ Модель блога """
     title = models.CharField(max_length=100, verbose_name='Заголовок',
                              help_text='Введите заголовок статьи')
-    slug = models.SlugField(unique=True, blank=True, verbose_name='slug',
-                            max_length=100)
+    slug = models.SlugField(unique=True, verbose_name='slug',
+                            max_length=100, db_index=True)
     content = models.TextField(verbose_name='Содержимое')
     image = models.ImageField(
         upload_to='blog/images',
@@ -48,7 +48,7 @@ class Blog(models.Model):
         return reverse('blog:blog_detail', kwargs={'slug': self.slug})
 
     def save(self, *args, **kwargs):
-        if not self.id:
+        if not self.slug:
             self.slug = slugify(self.title)
         super().save(*args, **kwargs)
 
