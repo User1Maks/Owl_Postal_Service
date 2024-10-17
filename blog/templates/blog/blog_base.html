@@ -58,10 +58,10 @@
             <h1>Блог СОВА</h1>
             <p class="lead text-muted">Наши статьи </p>
             <p>
-
-
+                {% if user.is_superuser %}
                 <a href="{% url 'blog:blog_create' %}"
                    class="btn btn-primary my-2">Создать статью</a>
+                {% endif %}
 
 
                 <a href="/" class="btn btn-secondary my-2">На главную</a>

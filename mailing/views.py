@@ -74,9 +74,9 @@ class ClientCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     def form_valid(self, form):
         """Метод для добавления ссылки на модель пользователя, которая
         заполняется автоматически"""
-        client = form.save(commit=False)
+        client = form.save()  # сохраняем клиента в БД
         user = self.request.user
-        client.owner = user
+        client.owner.add(user)
         client.save()
         return super().form_valid(form)
 

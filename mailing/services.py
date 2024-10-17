@@ -18,6 +18,7 @@ def get_datetime():
 
 def send_mailing():
     """Функция для отправки письма и проверки статусов рассылки"""
+    print('Выполнена')
 
     current_datetime = get_datetime()
 

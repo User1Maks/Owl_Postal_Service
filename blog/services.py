@@ -23,7 +23,7 @@ def get_cached_blog(blog_slug):
     return blog_list
 
 
-def random_blog_articles(request):
+def random_blog_articles(request):  # закешировать
     """Возвращает 3 случайные статьи"""
     # Получаем все статьи
     all_articles = list(Blog.objects.all())

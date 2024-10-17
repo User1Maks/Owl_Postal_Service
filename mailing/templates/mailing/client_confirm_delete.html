@@ -1,4 +1,4 @@
-{% extends 'home.html' %}
+{% extends 'mailing/client_base.html' %}
 {% block content %}
 
 
@@ -7,15 +7,15 @@
         <div class="col-8 mx-auto">
             <form class="row" method="post" enctype="multipart/form-data">
                 <div class="card">
-                    <p class="card-text">Действительно хотите удалить данные
-                        {{object.email}} ?</p>
+                    <h4 class="card-text">Действительно хотите удалить данные
+                        {{object.email}} ?</h4>
                     <div class="card-body">
                         {% csrf_token %}
                     </div>
-                    <button type="submit" class="p-2 btn btn-danger">
+                    <button type="submit" class="p-2 btn btn-danger mb-2">
                         Удалить
                     </button>
-                    <a class="btn btn-primary"
+                    <a class="btn btn-primary mb-2"
                        href="{% url 'mailing:client_list'%}"
                        role="button">Отменить</a>
                 </div>

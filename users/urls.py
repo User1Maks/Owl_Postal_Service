@@ -9,7 +9,7 @@ from users.views import (
     email_verification,
     UserListView
 )
-from django.views.decorators.cache import cache_page
+
 
 app_name = UsersConfig.name
 

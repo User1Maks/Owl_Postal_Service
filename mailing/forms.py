@@ -1,6 +1,8 @@
 import json
 from django import forms
 from django.forms import BooleanField
+from django.utils import timezone
+
 from mailing.models import Client, Message, Mailing
 
 
@@ -19,7 +21,16 @@ class StyleFormMixin:
 class ClientForm(StyleFormMixin, forms.ModelForm):
     class Meta:
         model = Client
-        fields = '__all__'
+        exclude = ('owner',)
+        # Делаем выбор даты удобным для пользователя и ограничиваем его
+        # выбор даты рождения
+        widgets = {
+            'date_of_birth': forms.DateInput(
+                attrs={'type': 'date',
+                       'max': timezone.now().date().isoformat()
+                       }
+            )
+        }
 
 
 class MessageForm(StyleFormMixin, forms.ModelForm):
@@ -60,9 +71,11 @@ class MailingForm(StyleFormMixin, forms.ModelForm):
             'period_mailing', 'message', 'clients',)
         widgets = {
             'datetime_first_mailing': forms.DateTimeInput(
-                attrs={'type': 'datetime-local'}),
+                attrs={'type': 'datetime-local',
+                       'min': timezone.now().isoformat()}),
             'last_datetime_mailing': forms.DateTimeInput(
-                attrs={'type': 'datetime-local'})
+                attrs={'type': 'datetime-local',
+                       'min': timezone.now().isoformat()})
         }
 
     def clean_mailing_name(self):

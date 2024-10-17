@@ -23,13 +23,15 @@
                            href="{% url 'blog:blog_detail' object.slug %}"
                            role="button">Посмотреть</a>
 
+                        {% if user.is_superuser %}
                         <a class="p-2 btn btn-warning ms-auto mb-2"
-                           href="#"
+                           href="{% url 'blog:blog_update' object.slug %}"
                            role="button">Редактировать</a>
 
                         <a class="p-2 btn btn-danger ms-auto mb-2"
-                           href="#"
+                           href="{% url 'blog:blog_delete' object.slug %}"
                            role="button">Удалить</a>
+                         {% endif %}
 
                     </small>
                 </div>

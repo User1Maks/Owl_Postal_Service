@@ -101,6 +101,7 @@
         </div>
     </div>
 
+
     <div class="album py-5 bg-light">
         <div class="container">
             <h2>Статьи из блога СОВА</h2>
@@ -116,15 +117,17 @@
                 <li>Статей нет</li>
                 {% endfor %}
             </ul>
-
+            {% if user.is_authenticated %}
             <h2>Статистика рассылок</h2>
             <ul>
                 <li>Общее количество рассылок: {{ number_of_mailings }}</li>
                 <li>Количество активных рассылок: {{ active_mailings }}</li>
                 <li>Количество уникальных клиентов: {{ unique_clients }}</li>
             </ul>
+            {% endif %}
         </div>
     </div>
+
 
 </main>
 

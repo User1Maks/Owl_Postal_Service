@@ -1,4 +1,4 @@
-{% extends 'home.html' %}
+{% extends 'mailing/message_base.html' %}
 {% block content %}
 
 
@@ -7,7 +7,7 @@
         <div class="col-8 mx-auto">
             <form class="row" method="post" enctype="multipart/form-data">
                 <div class="card">
-                    <p class="p-2 fs-4 card-text mx-auto">Клиент</p>
+                    <h3 class="p-2 fs-4 card-text mx-auto">Сообщение</h3>
                     <div class="card-body">
 
                         {% csrf_token %}

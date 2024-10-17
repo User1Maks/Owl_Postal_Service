@@ -11,16 +11,16 @@
         <p class="card-text">
             {{object.created_at}} | Просмотров: {{object.views_count}}
         </p>
-        <a class="p-2 btn btn-primary"
+        <a class="p-2 btn btn-primary mb-2"
            href="{% url 'blog:blog_list' %}"
            role="button">Назад</a>
 
-        {% if user.is_authenticated %}
-        <a class="p-2 btn btn-warning ms-auto"
+        {% if user.is_superuser %}
+        <a class="p-2 btn btn-warning ms-auto mb-2"
            href="{% url 'blog:blog_update' object.slug %}"
            role="button">Редактировать</a>
 
-        <a class="p-2 btn btn-danger ms-auto"
+        <a class="p-2 btn btn-danger ms-auto mb-2"
            href="{% url 'blog:blog_delete' object.slug %}"
            role="button">Удалить</a>
         {% endif %}

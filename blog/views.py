@@ -1,7 +1,7 @@
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
 from django.urls import reverse_lazy, reverse
-from django.utils.text import slugify
+
 
 from django.views.generic import (
     ListView,
@@ -10,6 +10,7 @@ from django.views.generic import (
     UpdateView,
     DeleteView,
 )
+from pytils.translit import slugify
 
 from blog.forms import BlogForm
 from blog.models import Blog
@@ -32,12 +33,12 @@ class BlogDetailView(DetailView):
         self.object.save()
         return self.object
 
-    # def get_context_data(self, **kwargs):
-    #     """Кеширование статей отображаемых в 'blog_detail.html' """
-    #
-    #     context_data = super().get_context_data(**kwargs)
-    #     context_data['blog_detail'] = get_cached_blog(self.object.slug)
-    #     return context_data
+    def get_context_data(self, **kwargs):
+        """Кеширование статей отображаемых в 'blog_detail.html' """
+
+        context_data = super().get_context_data(**kwargs)
+        context_data['blog_detail'] = get_cached_blog(self.object.slug)
+        return context_data
 
 
 class BlogCreateView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
@@ -63,7 +64,7 @@ class BlogUpdateView(LoginRequiredMixin, UpdateView):
     success_url = reverse_lazy('blog:blog_list')
 
     # def get_success_url(self):
-    #     return reverse('blog:blog_list', args=[self.kwargs.get('pk')])
+    #     return reverse('blog:blog_list', args=[self.kwargs.get('slug')])
 
     def form_valid(self, form):
 

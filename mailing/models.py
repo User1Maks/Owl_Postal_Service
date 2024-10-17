@@ -1,5 +1,3 @@
-from datetime import timedelta
-
 from django.db import models
 
 from users.models import NULLABLE, User
@@ -22,8 +20,10 @@ class Client(models.Model):
     date_of_birth = models.DateField(verbose_name='Дата рождения',
                                      **NULLABLE,
                                      help_text='Введите дату рождения')
-    owner = models.ForeignKey(User, on_delete=models.CASCADE,
-                              verbose_name='Пользователь')
+    owner = models.ManyToManyField(
+        User,
+        verbose_name='Пользователь',
+        related_name='clients')
 
     def __str__(self):
         return f'{self.email}'
