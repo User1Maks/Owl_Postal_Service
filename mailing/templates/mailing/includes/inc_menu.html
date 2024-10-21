@@ -1,10 +1,11 @@
-<header>
+<header data-bs-theme="dark">
     <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 col-md-7 py-4">
                     <h4 class="text-white">Сова </h4>
-                    <p class="text-muted">Почтовый сервис рассылок "Сова",
+                    <p class="text-body-secondary">Почтовый сервис рассылок
+                        "Сова",
                         поможет вам привлечь аудиторию, наладить коммуникацию
                         и лидогенерацию.
                     </p>
@@ -16,10 +17,37 @@
                                href="/"
                                role="button">Главная</a>
                         </li>
-                        <li><a href="#" class="text-white">Рассылки</a>
+
+                        {% if user.is_authenticated %}
+
+                        <li><a class="text-white"
+                               href="{% url 'users:user_profile' %}"
+                               role="button">Профиль</a>
+
+                        <li><a class="text-white"
+                               href="{% url 'users:logout' %}"
+                               role="button">Выйти</a>
+
+                            {% else %}
+
+                        <li><a class="text-white"
+                               href="{% url 'users:login' %}"
+                               role="button">Войти</a>
                         </li>
-                        <li><a href="#" class="text-white">Клиенты</a></li>
-                        <li><a href="#" class="text-white">Зарегистрироваться</a></li>
+                        <li><a class="text-white"
+                               href="{% url 'users:register' %}"
+                               role="button">Регистрация</a>
+                        </li>
+
+
+                        {% endif %}
+
+                        {% if user.is_staff %}
+                        <li><a class="text-white"
+                               href="/admin/"
+                               role="button">Администрирование</a>
+                            {% endif %}
+
                     </ul>
                 </div>
             </div>
@@ -27,19 +55,20 @@
     </div>
     <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container d-flex justify-content-between">
-            <a href="#" class="navbar-brand d-flex align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                     fill="none" stroke="currentColor" stroke-linecap="round"
-                     stroke-linejoin="round" stroke-width="2" aria-hidden="true"
-                     class="mr-2" viewBox="0 0 24 24" focusable="false">
-                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-                    <circle cx="12" cy="13" r="4"/>
+            <a href="{% url 'mailing:mailing_list' %}"
+               class="navbar-brand d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                     fill="currentColor" class="bi bi-envelope"
+                     style="margin-right: 10px;"
+                     viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"></path>
                 </svg>
-                <strong>Album</strong>
+                <strong>Рассылки</strong>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarHeader" aria-controls="navbarHeader"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false"
+                    aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>

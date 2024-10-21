@@ -1,0 +1,5719 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-09-30T10:19:16.549Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "4",
+        "object_repr": "Bogatyr28@yandex.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-09-30T10:19:28.941Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043b\\u0438\\u0435\\u043d\\u0442\\u044b\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-09-30T13:49:45.267Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "4",
+        "object_repr": "Bogatyr28@yandex.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-09-30T13:59:15.082Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u0441\\u043b\\u0435\\u0434\\u0443\\u044e\\u0449\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-09-30T13:59:40.246Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u0441\\u043b\\u0435\\u0434\\u0443\\u044e\\u0449\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-09-30T14:20:20.979Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Попытка рассылки 3 - Туризм True",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043b\\u0438\\u0435\\u043d\\u0442\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-09-30T14:20:24.490Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Попытка рассылки 2 - Туризм True",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043b\\u0438\\u0435\\u043d\\u0442\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-10-01T07:10:18.698Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u0441\\u043b\\u0435\\u0434\\u0443\\u044e\\u0449\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-10-01T07:18:14.474Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u0441\\u043b\\u0435\\u0434\\u0443\\u044e\\u0449\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-10-01T07:24:33.013Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-10-01T07:26:00.135Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-10-01T08:28:37.257Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u0441\\u043b\\u0435\\u0434\\u0443\\u044e\\u0449\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-10-01T08:29:34.265Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-10-01T08:32:18.731Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-10-01T08:44:24.585Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u0441\\u043b\\u0435\\u0434\\u0443\\u044e\\u0449\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-10-01T10:34:17.576Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-10-01T10:39:00.559Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-10-01T11:49:33.378Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-10-01T13:05:55.557Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-10-01T13:06:22.941Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-10-01T13:18:29.217Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-10-01T13:37:28.061Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u0441\\u043b\\u0435\\u0434\\u0443\\u044e\\u0449\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-10-01T13:37:44.711Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-10-01T14:11:55.921Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-10-01T14:12:34.488Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u0441\\u043b\\u0435\\u0434\\u0443\\u044e\\u0449\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.158Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "195",
+        "object_repr": "Попытка рассылки 195 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.178Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "194",
+        "object_repr": "Попытка рассылки 194 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.178Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "193",
+        "object_repr": "Попытка рассылки 193 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.179Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "192",
+        "object_repr": "Попытка рассылки 192 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.180Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "191",
+        "object_repr": "Попытка рассылки 191 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.180Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "190",
+        "object_repr": "Попытка рассылки 190 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.181Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "189",
+        "object_repr": "Попытка рассылки 189 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.181Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "188",
+        "object_repr": "Попытка рассылки 188 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.181Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "187",
+        "object_repr": "Попытка рассылки 187 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.182Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "186",
+        "object_repr": "Попытка рассылки 186 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.182Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "185",
+        "object_repr": "Попытка рассылки 185 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.182Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "184",
+        "object_repr": "Попытка рассылки 184 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.183Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "183",
+        "object_repr": "Попытка рассылки 183 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.183Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "182",
+        "object_repr": "Попытка рассылки 182 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.184Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "181",
+        "object_repr": "Попытка рассылки 181 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.184Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "180",
+        "object_repr": "Попытка рассылки 180 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.184Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "179",
+        "object_repr": "Попытка рассылки 179 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.185Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "178",
+        "object_repr": "Попытка рассылки 178 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.185Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "177",
+        "object_repr": "Попытка рассылки 177 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.185Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "176",
+        "object_repr": "Попытка рассылки 176 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.186Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "175",
+        "object_repr": "Попытка рассылки 175 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.186Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "174",
+        "object_repr": "Попытка рассылки 174 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.187Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "173",
+        "object_repr": "Попытка рассылки 173 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.187Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "172",
+        "object_repr": "Попытка рассылки 172 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.187Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "171",
+        "object_repr": "Попытка рассылки 171 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.188Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "170",
+        "object_repr": "Попытка рассылки 170 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.188Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "169",
+        "object_repr": "Попытка рассылки 169 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.188Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "168",
+        "object_repr": "Попытка рассылки 168 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.189Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "167",
+        "object_repr": "Попытка рассылки 167 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.189Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "166",
+        "object_repr": "Попытка рассылки 166 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.189Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "165",
+        "object_repr": "Попытка рассылки 165 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.190Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "164",
+        "object_repr": "Попытка рассылки 164 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.190Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "163",
+        "object_repr": "Попытка рассылки 163 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.190Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "162",
+        "object_repr": "Попытка рассылки 162 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.191Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "161",
+        "object_repr": "Попытка рассылки 161 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.191Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "160",
+        "object_repr": "Попытка рассылки 160 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.192Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "159",
+        "object_repr": "Попытка рассылки 159 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.192Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "158",
+        "object_repr": "Попытка рассылки 158 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.192Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "157",
+        "object_repr": "Попытка рассылки 157 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.193Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "156",
+        "object_repr": "Попытка рассылки 156 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.193Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "155",
+        "object_repr": "Попытка рассылки 155 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.194Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "154",
+        "object_repr": "Попытка рассылки 154 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.194Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "153",
+        "object_repr": "Попытка рассылки 153 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.195Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "152",
+        "object_repr": "Попытка рассылки 152 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.195Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "151",
+        "object_repr": "Попытка рассылки 151 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.196Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "150",
+        "object_repr": "Попытка рассылки 150 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.196Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "149",
+        "object_repr": "Попытка рассылки 149 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.197Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "148",
+        "object_repr": "Попытка рассылки 148 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.197Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "147",
+        "object_repr": "Попытка рассылки 147 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.197Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "146",
+        "object_repr": "Попытка рассылки 146 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.198Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "145",
+        "object_repr": "Попытка рассылки 145 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.198Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "144",
+        "object_repr": "Попытка рассылки 144 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.198Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "143",
+        "object_repr": "Попытка рассылки 143 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.199Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "142",
+        "object_repr": "Попытка рассылки 142 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.199Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "141",
+        "object_repr": "Попытка рассылки 141 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.200Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "140",
+        "object_repr": "Попытка рассылки 140 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.200Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "139",
+        "object_repr": "Попытка рассылки 139 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.200Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "138",
+        "object_repr": "Попытка рассылки 138 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.201Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "137",
+        "object_repr": "Попытка рассылки 137 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.201Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "136",
+        "object_repr": "Попытка рассылки 136 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.202Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "135",
+        "object_repr": "Попытка рассылки 135 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.202Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "134",
+        "object_repr": "Попытка рассылки 134 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.202Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "133",
+        "object_repr": "Попытка рассылки 133 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.203Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "132",
+        "object_repr": "Попытка рассылки 132 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.203Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "131",
+        "object_repr": "Попытка рассылки 131 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.203Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "130",
+        "object_repr": "Попытка рассылки 130 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.204Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "129",
+        "object_repr": "Попытка рассылки 129 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.204Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "128",
+        "object_repr": "Попытка рассылки 128 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.204Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "127",
+        "object_repr": "Попытка рассылки 127 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.205Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "126",
+        "object_repr": "Попытка рассылки 126 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.205Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "125",
+        "object_repr": "Попытка рассылки 125 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.206Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "124",
+        "object_repr": "Попытка рассылки 124 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.206Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "123",
+        "object_repr": "Попытка рассылки 123 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.206Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "122",
+        "object_repr": "Попытка рассылки 122 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.207Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "121",
+        "object_repr": "Попытка рассылки 121 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.207Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "120",
+        "object_repr": "Попытка рассылки 120 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.207Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "119",
+        "object_repr": "Попытка рассылки 119 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.208Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "118",
+        "object_repr": "Попытка рассылки 118 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.208Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "117",
+        "object_repr": "Попытка рассылки 117 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.209Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "116",
+        "object_repr": "Попытка рассылки 116 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.209Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "115",
+        "object_repr": "Попытка рассылки 115 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.210Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "114",
+        "object_repr": "Попытка рассылки 114 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.210Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "113",
+        "object_repr": "Попытка рассылки 113 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.210Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "112",
+        "object_repr": "Попытка рассылки 112 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.211Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "111",
+        "object_repr": "Попытка рассылки 111 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.211Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "110",
+        "object_repr": "Попытка рассылки 110 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.212Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "109",
+        "object_repr": "Попытка рассылки 109 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.212Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "108",
+        "object_repr": "Попытка рассылки 108 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.212Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "107",
+        "object_repr": "Попытка рассылки 107 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.213Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "106",
+        "object_repr": "Попытка рассылки 106 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.213Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "105",
+        "object_repr": "Попытка рассылки 105 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.213Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "104",
+        "object_repr": "Попытка рассылки 104 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.214Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "103",
+        "object_repr": "Попытка рассылки 103 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.214Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "102",
+        "object_repr": "Попытка рассылки 102 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.215Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "101",
+        "object_repr": "Попытка рассылки 101 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.215Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "100",
+        "object_repr": "Попытка рассылки 100 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.216Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "99",
+        "object_repr": "Попытка рассылки 99 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.216Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "98",
+        "object_repr": "Попытка рассылки 98 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.217Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "97",
+        "object_repr": "Попытка рассылки 97 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+        "action_time": "2024-10-01T14:20:58.217Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "96",
+        "object_repr": "Попытка рассылки 96 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.090Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "95",
+        "object_repr": "Попытка рассылки 95 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 127,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.095Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "94",
+        "object_repr": "Попытка рассылки 94 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 128,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.096Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "93",
+        "object_repr": "Попытка рассылки 93 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 129,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.096Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "92",
+        "object_repr": "Попытка рассылки 92 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 130,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.097Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "91",
+        "object_repr": "Попытка рассылки 91 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 131,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.097Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "90",
+        "object_repr": "Попытка рассылки 90 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 132,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.097Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "89",
+        "object_repr": "Попытка рассылки 89 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 133,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.098Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "88",
+        "object_repr": "Попытка рассылки 88 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 134,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.098Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "87",
+        "object_repr": "Попытка рассылки 87 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 135,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.098Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "86",
+        "object_repr": "Попытка рассылки 86 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 136,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.099Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "85",
+        "object_repr": "Попытка рассылки 85 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 137,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.099Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "84",
+        "object_repr": "Попытка рассылки 84 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 138,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.100Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "83",
+        "object_repr": "Попытка рассылки 83 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 139,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.100Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "82",
+        "object_repr": "Попытка рассылки 82 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 140,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.100Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "81",
+        "object_repr": "Попытка рассылки 81 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 141,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.101Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "80",
+        "object_repr": "Попытка рассылки 80 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 142,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.101Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "79",
+        "object_repr": "Попытка рассылки 79 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 143,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.101Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "78",
+        "object_repr": "Попытка рассылки 78 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 144,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.102Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "77",
+        "object_repr": "Попытка рассылки 77 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 145,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.102Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "76",
+        "object_repr": "Попытка рассылки 76 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 146,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.103Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "75",
+        "object_repr": "Попытка рассылки 75 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 147,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.103Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "74",
+        "object_repr": "Попытка рассылки 74 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 148,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.103Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "73",
+        "object_repr": "Попытка рассылки 73 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 149,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.104Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "72",
+        "object_repr": "Попытка рассылки 72 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 150,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.104Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "71",
+        "object_repr": "Попытка рассылки 71 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 151,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.105Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "70",
+        "object_repr": "Попытка рассылки 70 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 152,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.105Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "69",
+        "object_repr": "Попытка рассылки 69 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 153,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.105Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "68",
+        "object_repr": "Попытка рассылки 68 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 154,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.106Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "67",
+        "object_repr": "Попытка рассылки 67 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 155,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.106Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "66",
+        "object_repr": "Попытка рассылки 66 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 156,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.106Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "65",
+        "object_repr": "Попытка рассылки 65 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 157,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.107Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "64",
+        "object_repr": "Попытка рассылки 64 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 158,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.107Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "63",
+        "object_repr": "Попытка рассылки 63 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 159,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.108Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "62",
+        "object_repr": "Попытка рассылки 62 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 160,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.108Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "61",
+        "object_repr": "Попытка рассылки 61 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 161,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.109Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "60",
+        "object_repr": "Попытка рассылки 60 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 162,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.109Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "59",
+        "object_repr": "Попытка рассылки 59 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 163,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.109Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "58",
+        "object_repr": "Попытка рассылки 58 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 164,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.110Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "57",
+        "object_repr": "Попытка рассылки 57 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 165,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.110Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "56",
+        "object_repr": "Попытка рассылки 56 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 166,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.111Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "55",
+        "object_repr": "Попытка рассылки 55 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 167,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.111Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "54",
+        "object_repr": "Попытка рассылки 54 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 168,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.111Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "53",
+        "object_repr": "Попытка рассылки 53 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 169,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.112Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "52",
+        "object_repr": "Попытка рассылки 52 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 170,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.112Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "51",
+        "object_repr": "Попытка рассылки 51 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 171,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.113Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "50",
+        "object_repr": "Попытка рассылки 50 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 172,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.113Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "49",
+        "object_repr": "Попытка рассылки 49 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 173,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.114Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "48",
+        "object_repr": "Попытка рассылки 48 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 174,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.114Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "47",
+        "object_repr": "Попытка рассылки 47 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 175,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.114Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "46",
+        "object_repr": "Попытка рассылки 46 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 176,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.114Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "45",
+        "object_repr": "Попытка рассылки 45 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 177,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.115Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "44",
+        "object_repr": "Попытка рассылки 44 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 178,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.115Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "43",
+        "object_repr": "Попытка рассылки 43 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 179,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.115Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "42",
+        "object_repr": "Попытка рассылки 42 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 180,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.116Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "41",
+        "object_repr": "Попытка рассылки 41 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 181,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.116Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "40",
+        "object_repr": "Попытка рассылки 40 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 182,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.116Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "39",
+        "object_repr": "Попытка рассылки 39 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 183,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.117Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "38",
+        "object_repr": "Попытка рассылки 38 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 184,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.117Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "37",
+        "object_repr": "Попытка рассылки 37 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 185,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.117Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "36",
+        "object_repr": "Попытка рассылки 36 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 186,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.118Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "35",
+        "object_repr": "Попытка рассылки 35 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 187,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.118Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "34",
+        "object_repr": "Попытка рассылки 34 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 188,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.118Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "33",
+        "object_repr": "Попытка рассылки 33 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 189,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.119Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "32",
+        "object_repr": "Попытка рассылки 32 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 190,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.119Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "31",
+        "object_repr": "Попытка рассылки 31 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 191,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.120Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "30",
+        "object_repr": "Попытка рассылки 30 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 192,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.120Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "29",
+        "object_repr": "Попытка рассылки 29 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 193,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.120Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "28",
+        "object_repr": "Попытка рассылки 28 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 194,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.121Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "27",
+        "object_repr": "Попытка рассылки 27 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 195,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.121Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "26",
+        "object_repr": "Попытка рассылки 26 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 196,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.121Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "25",
+        "object_repr": "Попытка рассылки 25 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 197,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.122Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "24",
+        "object_repr": "Попытка рассылки 24 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 198,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.122Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "23",
+        "object_repr": "Попытка рассылки 23 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 199,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.122Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "22",
+        "object_repr": "Попытка рассылки 22 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 200,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.123Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "21",
+        "object_repr": "Попытка рассылки 21 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 201,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.123Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "20",
+        "object_repr": "Попытка рассылки 20 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 202,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.123Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "19",
+        "object_repr": "Попытка рассылки 19 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 203,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.124Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "18",
+        "object_repr": "Попытка рассылки 18 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 204,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.124Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "17",
+        "object_repr": "Попытка рассылки 17 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 205,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.125Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "16",
+        "object_repr": "Попытка рассылки 16 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 206,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.125Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "15",
+        "object_repr": "Попытка рассылки 15 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 207,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.125Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "14",
+        "object_repr": "Попытка рассылки 14 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 208,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.126Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "13",
+        "object_repr": "Попытка рассылки 13 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 209,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.126Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "12",
+        "object_repr": "Попытка рассылки 12 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 210,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.126Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "11",
+        "object_repr": "Попытка рассылки 11 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 211,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.127Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "10",
+        "object_repr": "Попытка рассылки 10 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 212,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.127Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "Попытка рассылки 9 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 213,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.128Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "8",
+        "object_repr": "Попытка рассылки 8 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 214,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.128Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "7",
+        "object_repr": "Попытка рассылки 7 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 215,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.128Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "Попытка рассылки 6 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 216,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.129Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "Попытка рассылки 5 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 217,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.129Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "Попытка рассылки 4 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 218,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.129Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Попытка рассылки 3 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 219,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.130Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Попытка рассылки 2 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 220,
+    "fields": {
+        "action_time": "2024-10-01T14:21:07.130Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Попытка рассылки 1 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 221,
+    "fields": {
+        "action_time": "2024-10-01T14:35:13.035Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "manager",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 222,
+    "fields": {
+        "action_time": "2024-10-01T14:53:19.560Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 223,
+    "fields": {
+        "action_time": "2024-10-01T15:03:59.803Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 224,
+    "fields": {
+        "action_time": "2024-10-01T15:07:12.010Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u0441\\u043b\\u0435\\u0434\\u0443\\u044e\\u0449\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 225,
+    "fields": {
+        "action_time": "2024-10-01T15:07:18.160Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 226,
+    "fields": {
+        "action_time": "2024-10-01T15:07:22.346Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 227,
+    "fields": {
+        "action_time": "2024-10-01T15:14:29.159Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 228,
+    "fields": {
+        "action_time": "2024-10-01T15:19:43.531Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u0441\\u043b\\u0435\\u0434\\u0443\\u044e\\u0449\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 229,
+    "fields": {
+        "action_time": "2024-10-01T15:26:53.267Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 230,
+    "fields": {
+        "action_time": "2024-10-01T15:29:43.708Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 231,
+    "fields": {
+        "action_time": "2024-10-01T16:45:17.860Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Test",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 232,
+    "fields": {
+        "action_time": "2024-10-01T16:45:40.540Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Test",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 233,
+    "fields": {
+        "action_time": "2024-10-01T17:29:15.279Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u0441\\u043b\\u0435\\u0434\\u0443\\u044e\\u0449\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 234,
+    "fields": {
+        "action_time": "2024-10-04T14:01:55.315Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "admin@example.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0440\\u0430\\u043d\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 235,
+    "fields": {
+        "action_time": "2024-10-04T14:04:53.889Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "moderator@sky.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 236,
+    "fields": {
+        "action_time": "2024-10-04T14:05:28.426Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "moderator@sky.com",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 237,
+    "fields": {
+        "action_time": "2024-10-04T14:06:59.079Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "moderator@sky.com",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 238,
+    "fields": {
+        "action_time": "2024-10-04T14:10:50.950Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "Bogatyr28@yandex.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 239,
+    "fields": {
+        "action_time": "2024-10-04T14:10:50.954Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "moderator@sky.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 240,
+    "fields": {
+        "action_time": "2024-10-04T14:28:29.247Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "4",
+        "object_repr": "moderator@sky.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\", \"Staff status\", \"\\u0422\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\", \"\\u0421\\u0442\\u0440\\u0430\\u043d\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 241,
+    "fields": {
+        "action_time": "2024-10-04T14:34:34.558Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "7",
+        "object_repr": "Mr.Maximus19@yandex.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 242,
+    "fields": {
+        "action_time": "2024-10-04T14:34:34.561Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "4",
+        "object_repr": "moderator@sky.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 243,
+    "fields": {
+        "action_time": "2024-10-04T15:11:34.809Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "manager",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 244,
+    "fields": {
+        "action_time": "2024-10-04T15:11:51.418Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "manager",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 245,
+    "fields": {
+        "action_time": "2024-10-04T15:19:31.426Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "8",
+        "object_repr": "moderator@sky.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\", \"\\u0422\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\", \"\\u0421\\u0442\\u0440\\u0430\\u043d\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 246,
+    "fields": {
+        "action_time": "2024-10-08T08:45:26.431Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "manager",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 247,
+    "fields": {
+        "action_time": "2024-10-08T09:58:26.344Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "users",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 248,
+    "fields": {
+        "action_time": "2024-10-08T13:36:21.209Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "9",
+        "object_repr": "user@sky.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 249,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.948Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "231",
+        "object_repr": "Попытка рассылки 231 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 250,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.951Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "230",
+        "object_repr": "Попытка рассылки 230 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 251,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.952Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "229",
+        "object_repr": "Попытка рассылки 229 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 252,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.952Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "228",
+        "object_repr": "Попытка рассылки 228 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 253,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.952Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "227",
+        "object_repr": "Попытка рассылки 227 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 254,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.953Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "226",
+        "object_repr": "Попытка рассылки 226 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 255,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.953Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "225",
+        "object_repr": "Попытка рассылки 225 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 256,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.953Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "224",
+        "object_repr": "Попытка рассылки 224 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 257,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.954Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "223",
+        "object_repr": "Попытка рассылки 223 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 258,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.954Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "222",
+        "object_repr": "Попытка рассылки 222 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 259,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.955Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "221",
+        "object_repr": "Попытка рассылки 221 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 260,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.955Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "220",
+        "object_repr": "Попытка рассылки 220 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 261,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.956Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "219",
+        "object_repr": "Попытка рассылки 219 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 262,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.956Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "218",
+        "object_repr": "Попытка рассылки 218 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 263,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.957Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "217",
+        "object_repr": "Попытка рассылки 217 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 264,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.957Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "216",
+        "object_repr": "Попытка рассылки 216 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 265,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.957Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "215",
+        "object_repr": "Попытка рассылки 215 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 266,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.958Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "214",
+        "object_repr": "Попытка рассылки 214 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 267,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.958Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "213",
+        "object_repr": "Попытка рассылки 213 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 268,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.958Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "212",
+        "object_repr": "Попытка рассылки 212 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 269,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.959Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "211",
+        "object_repr": "Попытка рассылки 211 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 270,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.959Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "210",
+        "object_repr": "Попытка рассылки 210 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 271,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.960Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "209",
+        "object_repr": "Попытка рассылки 209 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 272,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.961Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "208",
+        "object_repr": "Попытка рассылки 208 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 273,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.961Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "207",
+        "object_repr": "Попытка рассылки 207 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 274,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.961Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "206",
+        "object_repr": "Попытка рассылки 206 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 275,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.961Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "205",
+        "object_repr": "Попытка рассылки 205 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 276,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.962Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "204",
+        "object_repr": "Попытка рассылки 204 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 277,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.962Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "203",
+        "object_repr": "Попытка рассылки 203 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 278,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.963Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "202",
+        "object_repr": "Попытка рассылки 202 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 279,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.963Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "201",
+        "object_repr": "Попытка рассылки 201 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 280,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.964Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "200",
+        "object_repr": "Попытка рассылки 200 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 281,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.964Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "199",
+        "object_repr": "Попытка рассылки 199 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 282,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.965Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "198",
+        "object_repr": "Попытка рассылки 198 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 283,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.965Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "197",
+        "object_repr": "Попытка рассылки 197 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 284,
+    "fields": {
+        "action_time": "2024-10-08T13:55:52.965Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "196",
+        "object_repr": "Попытка рассылки 196 - Туризм True",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 285,
+    "fields": {
+        "action_time": "2024-10-08T16:10:50.167Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "test",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0433\\u043e\\u043b\\u043e\\u0432\\u043e\\u043a\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 286,
+    "fields": {
+        "action_time": "2024-10-08T16:10:55.824Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "test",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 287,
+    "fields": {
+        "action_time": "2024-10-08T16:11:01.937Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Нормативно-правовое регулирование искусственного интеллекта в здравоохранении России",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0433\\u043e\\u043b\\u043e\\u0432\\u043e\\u043a\", \"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 288,
+    "fields": {
+        "action_time": "2024-10-08T16:21:23.665Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Нормативно-правовое регулирование искусственного интеллекта в здравоохранении России",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 289,
+    "fields": {
+        "action_time": "2024-10-13T11:32:25.546Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Нормативно-правоdое регулирование искусственного интеллекта в здравоохранении России",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0433\\u043e\\u043b\\u043e\\u0432\\u043e\\u043a\", \"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 290,
+    "fields": {
+        "action_time": "2024-10-13T11:32:29.572Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Нормативно-правоdое регулирование искусственного интеллекта в здравоохранении России",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 291,
+    "fields": {
+        "action_time": "2024-10-13T13:57:01.392Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Нормативно-правовое регулирование искусственного интеллекта в здравоохранении России",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0433\\u043e\\u043b\\u043e\\u0432\\u043e\\u043a\", \"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 292,
+    "fields": {
+        "action_time": "2024-10-13T13:57:15.142Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Нормативно-правовое регулирование искусственного интеллекта в здравоохранении России",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 293,
+    "fields": {
+        "action_time": "2024-10-13T13:57:20.261Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Нормативно-правовое регулирование искусственного интеллекта в здравоохранении России",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 294,
+    "fields": {
+        "action_time": "2024-10-13T14:01:28.118Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Нормативно-правовое регулирование искусственного интеллекта в здравоохранении России",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 295,
+    "fields": {
+        "action_time": "2024-10-13T14:03:22.134Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Нормативно-правовое регулирование искусственного интеллекта в здравоохранении России",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 296,
+    "fields": {
+        "action_time": "2024-10-13T14:03:39.555Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Нормативно-правовое регулирование искусственного интеллекта в здравоохранении России",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 297,
+    "fields": {
+        "action_time": "2024-10-13T14:04:13.180Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Нормативно-правовое регулирование искусственного интеллекта в здравоохранении России",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 298,
+    "fields": {
+        "action_time": "2024-10-13T14:04:20.304Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Нормативно-правовое регулирование искусственного интеллекта в здравоохранении России",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 299,
+    "fields": {
+        "action_time": "2024-10-13T14:05:07.501Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Нормативно-правовое регулирование искусственного интеллекта в здравоохранении России",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 300,
+    "fields": {
+        "action_time": "2024-10-13T14:05:13.059Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Нормативно-правовое регулирование искусственного интеллекта в здравоохранении России",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 301,
+    "fields": {
+        "action_time": "2024-10-13T14:22:10.799Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "Зарегистрированные медицинские изделия, использующие технологии искусственного интеллекта",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 302,
+    "fields": {
+        "action_time": "2024-10-13T14:30:21.700Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "3",
+        "object_repr": "Стандартизованная отчетность в разработках систем искусственного интеллекта",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 303,
+    "fields": {
+        "action_time": "2024-10-13T14:30:38.153Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "5",
+        "object_repr": "Стандартизованная отчетность в разработках систем искусственного интеллекта",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 304,
+    "fields": {
+        "action_time": "2024-10-13T14:33:27.701Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "6",
+        "object_repr": "Реализация национальной стратегии искусственного интеллекта в сфере здравоохранения",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 305,
+    "fields": {
+        "action_time": "2024-10-13T14:41:13.873Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "7",
+        "object_repr": "Технологии искусственного интеллекта в медицине и здравоохранении: позиции России на глобальном пате",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 306,
+    "fields": {
+        "action_time": "2024-10-13T14:53:58.037Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "8",
+        "object_repr": "Обзор аналитических отчетов об искусственном интеллекте для медицины",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 307,
+    "fields": {
+        "action_time": "2024-10-13T14:54:52.993Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "9",
+        "object_repr": "Почти половина врачей обеспокоены использованием искусственного интеллекта",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 308,
+    "fields": {
+        "action_time": "2024-10-16T08:37:31.076Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "13",
+        "object_repr": "Большой текст тест 3",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 309,
+    "fields": {
+        "action_time": "2024-10-16T08:39:17.246Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "12",
+        "object_repr": "тест 3",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 310,
+    "fields": {
+        "action_time": "2024-10-16T14:32:26.684Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "manager",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 311,
+    "fields": {
+        "action_time": "2024-10-17T11:18:27.008Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "users",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 312,
+    "fields": {
+        "action_time": "2024-10-17T13:56:49.094Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u0441\\u043b\\u0435\\u0434\\u0443\\u044e\\u0449\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 313,
+    "fields": {
+        "action_time": "2024-10-17T13:59:12.146Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u0441\\u043b\\u0435\\u0434\\u0443\\u044e\\u0449\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 314,
+    "fields": {
+        "action_time": "2024-10-17T14:20:13.302Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 315,
+    "fields": {
+        "action_time": "2024-10-17T14:20:20.243Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 316,
+    "fields": {
+        "action_time": "2024-10-20T08:42:35.765Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 317,
+    "fields": {
+        "action_time": "2024-10-20T08:50:29.499Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "manager",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 318,
+    "fields": {
+        "action_time": "2024-10-20T08:51:02.114Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "manager",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 319,
+    "fields": {
+        "action_time": "2024-10-20T10:55:54.055Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 320,
+    "fields": {
+        "action_time": "2024-10-20T12:17:01.343Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "Yardrey@yandex.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 321,
+    "fields": {
+        "action_time": "2024-10-20T12:17:06.811Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "Yardrey@yandex.ru",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 322,
+    "fields": {
+        "action_time": "2024-10-21T08:39:46.869Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "users",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 323,
+    "fields": {
+        "action_time": "2024-10-21T09:00:11.310Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "Тестовое сообщение пользователя",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 324,
+    "fields": {
+        "action_time": "2024-10-21T09:11:16.022Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Test",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 325,
+    "fields": {
+        "action_time": "2024-10-21T09:11:27.807Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "6",
+        "object_repr": "testuser4@sky.com",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 326,
+    "fields": {
+        "action_time": "2024-10-21T09:11:35.364Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "Yardrey@yandex.ru",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 327,
+    "fields": {
+        "action_time": "2024-10-21T09:47:01.228Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "6",
+        "object_repr": "testuser4@sky.com",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 328,
+    "fields": {
+        "action_time": "2024-10-21T09:47:05.076Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "7",
+        "object_repr": "test2@mail.ru",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 329,
+    "fields": {
+        "action_time": "2024-10-21T09:47:08.503Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "Yardrey@yandex.ru",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 330,
+    "fields": {
+        "action_time": "2024-10-21T10:07:07.987Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "11",
+        "object_repr": "test5@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 331,
+    "fields": {
+        "action_time": "2024-10-21T10:07:07.991Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "10",
+        "object_repr": "test4@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 332,
+    "fields": {
+        "action_time": "2024-10-21T10:07:07.991Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "9",
+        "object_repr": "test4@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 333,
+    "fields": {
+        "action_time": "2024-10-21T10:07:07.992Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "8",
+        "object_repr": "test3@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 334,
+    "fields": {
+        "action_time": "2024-10-21T10:07:07.992Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "7",
+        "object_repr": "test2@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 335,
+    "fields": {
+        "action_time": "2024-10-21T10:07:07.993Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "6",
+        "object_repr": "testuser4@sky.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 336,
+    "fields": {
+        "action_time": "2024-10-21T10:07:14.225Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "Yardrey@yandex.ru",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 4,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 4,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 4,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 4,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 5,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 5,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 5,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 5,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add Клиент",
+        "content_type": 6,
+        "codename": "add_client"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change Клиент",
+        "content_type": 6,
+        "codename": "change_client"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete Клиент",
+        "content_type": 6,
+        "codename": "delete_client"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view Клиент",
+        "content_type": 6,
+        "codename": "view_client"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add Рассылка",
+        "content_type": 7,
+        "codename": "add_mailing"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change Рассылка",
+        "content_type": 7,
+        "codename": "change_mailing"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete Рассылка",
+        "content_type": 7,
+        "codename": "delete_mailing"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view Рассылка",
+        "content_type": 7,
+        "codename": "view_mailing"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add Попытка отправки письма",
+        "content_type": 8,
+        "codename": "add_mailingattempt"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change Попытка отправки письма",
+        "content_type": 8,
+        "codename": "change_mailingattempt"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete Попытка отправки письма",
+        "content_type": 8,
+        "codename": "delete_mailingattempt"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view Попытка отправки письма",
+        "content_type": 8,
+        "codename": "view_mailingattempt"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add Сообщение рассылки",
+        "content_type": 9,
+        "codename": "add_message"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change Сообщение рассылки",
+        "content_type": 9,
+        "codename": "change_message"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete Сообщение рассылки",
+        "content_type": 9,
+        "codename": "delete_message"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view Сообщение рассылки",
+        "content_type": 9,
+        "codename": "view_message"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add django job",
+        "content_type": 10,
+        "codename": "add_djangojob"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change django job",
+        "content_type": 10,
+        "codename": "change_djangojob"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete django job",
+        "content_type": 10,
+        "codename": "delete_djangojob"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view django job",
+        "content_type": 10,
+        "codename": "view_djangojob"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add django job execution",
+        "content_type": 11,
+        "codename": "add_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change django job execution",
+        "content_type": 11,
+        "codename": "change_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete django job execution",
+        "content_type": 11,
+        "codename": "delete_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view django job execution",
+        "content_type": 11,
+        "codename": "view_djangojobexecution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add Пользователь",
+        "content_type": 12,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change Пользователь",
+        "content_type": 12,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete Пользователь",
+        "content_type": 12,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view Пользователь",
+        "content_type": 12,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Может отключать рассылки",
+        "content_type": 7,
+        "codename": "can_edit_mailing_status"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Может блокировать пользователей сервиса",
+        "content_type": 12,
+        "codename": "can_edit_is_active_users"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Может отключать рассылки",
+        "content_type": 12,
+        "codename": "can_edit_is_active_mailing"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Может отключать рассылки",
+        "content_type": 7,
+        "codename": "can_disable_mailing_status"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add Статья",
+        "content_type": 13,
+        "codename": "add_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change Статья",
+        "content_type": 13,
+        "codename": "change_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete Статья",
+        "content_type": 13,
+        "codename": "delete_blog"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view Статья",
+        "content_type": 13,
+        "codename": "view_blog"
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+        "name": "manager",
+        "permissions": [
+            52,
+            49,
+            28,
+            51,
+            50,
+            46,
+            48
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+        "name": "users",
+        "permissions": [
+            56,
+            21,
+            22,
+            23,
+            24,
+            25,
+            52,
+            49,
+            26,
+            27,
+            28,
+            32,
+            33,
+            34,
+            35,
+            36,
+            51,
+            46,
+            48
+        ]
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "mailing",
+        "model": "client"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "mailing",
+        "model": "mailing"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "mailing",
+        "model": "mailingattempt"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "mailing",
+        "model": "message"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "django_apscheduler",
+        "model": "djangojob"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "django_apscheduler",
+        "model": "djangojobexecution"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "users",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "blog",
+        "model": "blog"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "724y98hjkdujyvw00fwyksiu6gvh74qt",
+    "fields": {
+        "session_data": ".eJxVjMEKwyAQRP_FcxGNRN0ee-83iOuuNW1RiMkp9N-bQA7taWDem9lEiOtSwtp5DhOJqwBx-e0wphfXA9Az1keTqdVlnlAeijxpl_dG_L6d7t9Bib3sazewipw1KENsEyXLll2GPbJRo_beowPMoyWt0bBySAo4G4ppAMji8wUBtDi0:1sy6i9:gVRo2Z4Esm9yeJIbGiEMtYtBr-rT39BN1KpAHuk0Xbg",
+        "expire_date": "2024-10-22T09:40:57.047Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "m48qcvgaxqd4nouhvb0fccs3qcwiuwfb",
+    "fields": {
+        "session_data": ".eJxVjMEKwyAQRP_FcxGNRN0ee-83iOuuNW1RiMkp9N-bQA7taWDem9lEiOtSwtp5DhOJqwBx-e0wphfXA9Az1keTqdVlnlAeijxpl_dG_L6d7t9Bib3sazewipw1KENsEyXLll2GPbJRo_beowPMoyWt0bBySAo4G4ppAMji8wUBtDi0:1t2pUJ:x5ZaAnL6kqSQYVEVmS3kFZhQhS4yA7cPOADIWpeUaPY",
+        "expire_date": "2024-11-04T10:18:11.217Z"
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 1,
+    "fields": {
+        "email": "Yardrey@yandex.ru",
+        "last_name": "Подшивалов",
+        "first_name": "Андрей",
+        "patronymic": "Алексеевич",
+        "a_comment": "Юрист-блогер. Владелец компании Ярдрей.",
+        "date_of_birth": "1982-09-21",
+        "owner": [
+            1,
+            9
+        ]
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 2,
+    "fields": {
+        "email": "Durov@yandex.ru",
+        "last_name": "Дуров",
+        "first_name": "Павел",
+        "patronymic": "Валерьевич",
+        "a_comment": "Предприниматель в сфере информационных технологий. Основал социальную сеть «ВКонтакте». Владелец  мессенджера Telegram, который заявляет высокую степень конфиденциальности данных.",
+        "date_of_birth": "1984-10-10",
+        "owner": []
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 3,
+    "fields": {
+        "email": "Evgeniy@yandex.ru",
+        "last_name": "Касперский",
+        "first_name": "Евгений",
+        "patronymic": "Валентинович",
+        "a_comment": "Российский программист, один из ведущих мировых специалистов в сфере информационной безопасности. Один из основателей, основной владелец и нынешний глава АО «Лаборатория Касперского».",
+        "date_of_birth": "1965-10-04",
+        "owner": []
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 4,
+    "fields": {
+        "email": "Bogatyr28@yandex.ru",
+        "last_name": "Богатырев",
+        "first_name": "Святослав",
+        "patronymic": "Силович",
+        "a_comment": "",
+        "date_of_birth": null,
+        "owner": []
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 5,
+    "fields": {
+        "email": "user4@sky.com",
+        "last_name": "Иванов",
+        "first_name": "Иван",
+        "patronymic": "Иваныч",
+        "a_comment": "",
+        "date_of_birth": "1990-03-15",
+        "owner": [
+            9
+        ]
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 12,
+    "fields": {
+        "email": "test2@mail.ru",
+        "last_name": null,
+        "first_name": null,
+        "patronymic": null,
+        "a_comment": "",
+        "date_of_birth": null,
+        "owner": [
+            1
+        ]
+    }
+},
+{
+    "model": "mailing.message",
+    "pk": 1,
+    "fields": {
+        "letter_subject": "Германия: Замок Гогенцоллерн",
+        "image_message": "mailings/images/zamok-gogencollern-1920x1080-zamok-gogencollern-16630.jpg",
+        "letter_body": "Однодневная поездка на юг страны, в Швабский Альб. На горном конусе лежит внушительный Гогенцоллернбург, прародина Гогенцоллернов.\r\n\r\nДом Гогенцоллернов был когда-то одной из самых могущественных семейных династий на немецкой земле с почти 1000-летней традицией. Ее самым известным сыном был Фридрих Великий, король Пруссии. Наслаждайтесь фантастическим видом с высоты метров 850 укреплений замка на всю окружающую территорию. У вас будет достаточно времени, чтобы прогуляться вокруг крепостных валов, башен и двора этого впечатляющего горного замка.\r\n\r\nОсновной момент дня: посещение интерьера в сопровождении гида. Великолепные залы, залы и жилые комнаты, украшенные картинами, драгоценным фарфором, кованым железом из золота и серебра и историческими облачениями.",
+        "owner": 1
+    }
+},
+{
+    "model": "mailing.message",
+    "pk": 3,
+    "fields": {
+        "letter_subject": "Места силы Байкала. Летнее или осеннее путешествие",
+        "image_message": "mailings/images/BS_2b71106b7b32579afef2d0863df915b1ad7c214f74df09b77807167217aedb0c.jpg",
+        "letter_body": "Отправьтесь на удивительный Байкал!\r\n\r\nВ этом туре можно сделать множество фотографий разных мест Байкала.\r\n\r\nМы побываем на острове Ольхон, в Тункинской долине, погуляем по берегу Кынгарги, где увидим таинственные сооружения из камней, приносящие удачу.",
+        "owner": 1
+    }
+},
+{
+    "model": "mailing.message",
+    "pk": 4,
+    "fields": {
+        "letter_subject": "Тестовое сообщение пользователя",
+        "image_message": "",
+        "letter_body": "Тестовое сообщение пользователя",
+        "owner": 9
+    }
+},
+{
+    "model": "mailing.mailing",
+    "pk": 1,
+    "fields": {
+        "mailing_name": "Туризм",
+        "datetime_first_mailing": "2024-10-17T14:20:05Z",
+        "next_datetime_mailing": "2024-10-17T14:40:00Z",
+        "last_datetime_mailing": "2024-10-17T14:40:00Z",
+        "period_mailing": 1,
+        "mailing_status": 2,
+        "message": 1,
+        "owner": 1,
+        "clients": [
+            4
+        ]
+    }
+},
+{
+    "model": "mailing.mailing",
+    "pk": 6,
+    "fields": {
+        "mailing_name": "Test",
+        "datetime_first_mailing": "2024-10-20T12:08:00Z",
+        "next_datetime_mailing": "2024-10-20T12:13:00Z",
+        "last_datetime_mailing": "2024-10-20T12:13:00Z",
+        "period_mailing": 1,
+        "mailing_status": 3,
+        "message": 3,
+        "owner": 9,
+        "clients": [
+            4
+        ]
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 232,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:01:53.650Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 233,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:01:56.023Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 234,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:02:52.685Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 235,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:02:55.051Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 236,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:03:52.684Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 237,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:03:54.961Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 238,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:04:52.813Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 239,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:06:12.452Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 240,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:10:50.229Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 241,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:10:53.004Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 242,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:11:49.516Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 243,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:12:36.850Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 244,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:12:49.558Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 245,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:13:49.436Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 246,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:20:43.221Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 247,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:20:45.564Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 248,
+    "fields": {
+        "datetime_attempt": "2024-10-20T11:57:18.448Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 249,
+    "fields": {
+        "datetime_attempt": "2024-10-20T11:58:22.787Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 250,
+    "fields": {
+        "datetime_attempt": "2024-10-20T11:58:25.014Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 251,
+    "fields": {
+        "datetime_attempt": "2024-10-20T11:59:21.720Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 252,
+    "fields": {
+        "datetime_attempt": "2024-10-20T11:59:24.122Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 253,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:00:21.789Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 254,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:00:24.035Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 255,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:01:21.892Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 256,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:01:24.018Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 257,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:02:21.692Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 258,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:02:24.193Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 259,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:06:44.874Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 260,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:06:45.162Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 261,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:08:43.907Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 262,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:08:44.309Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 263,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:10:37.243Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 264,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:11:36.186Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 265,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:13:37.678Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$ZkQhOjoKNXO2pozK2NVr2b$QUmxgEjWxSlvx05x/M+Fd+n3e1LsPrmqqMXMN3/SHyU=",
+        "last_login": "2024-10-21T10:06:52.471Z",
+        "is_superuser": true,
+        "first_name": "Admin",
+        "last_name": "Adminov",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-09-30T09:39:14Z",
+        "email": "admin@example.com",
+        "avatar": "",
+        "phone": null,
+        "a_country": "Россия",
+        "token": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$zWfo2nIlzyOKEMdvRdSYhR$Ps6cpjdkThFsn8befVTYIMfePJmTQKwDyBOvzp9KSzw=",
+        "last_login": "2024-10-21T09:29:14.622Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-10-04T15:14:14Z",
+        "email": "moderator@sky.com",
+        "avatar": "",
+        "phone": "+79000000000",
+        "a_country": "Россия",
+        "token": null,
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$F7D61ariXR7IGUXWbFry4e$5UtuX9AxnEs0DFKsD4Fpl5zFaAEqhEz0nGefjMvPngc=",
+        "last_login": "2024-10-21T10:18:11.216Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-10-08T09:22:27Z",
+        "email": "user@sky.com",
+        "avatar": "",
+        "phone": null,
+        "a_country": null,
+        "token": null,
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 1,
+    "fields": {
+        "title": "Нормативно-правовое регулирование искусственного интеллекта в здравоохранении России",
+        "slug": "normativno-pravovoe-regulirovanie-iskusstvennogo-intellekta-v-zdravoohranenii-rossii",
+        "content": "В настоящее время в России идет активное внедрение систем искусственного интеллекта в сфере здравоохранения. Учитывая, что разработчики ИИ-решений предлагают их практически для всех направлений, включая лечебно-диагностические процессы – регуляторы стараются не отставать в части нормативно-правового и технического регулирования этой отрасли, чтобы обеспечить баланс между созданием условий для развития отечественного рынка и вместе с этим – контролем эффективности и безопасности продуктов.",
+        "image": "blog/images/normativno-pravovoe-regulirovanie-iskusstvennogo-intellekta-v-zdravookhranen_1skSJA5.jpg",
+        "views_count": 48,
+        "created_at": "2024-10-08T15:56:09.382Z",
+        "is_published": true
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 2,
+    "fields": {
+        "title": "Зарегистрированные медицинские изделия, использующие технологии искусственного интеллекта",
+        "slug": "zaregistrirovannye-medicinskie-izdeliya-ispolzuyushie-tehnologii-iskusstvennogo-intellekta",
+        "content": "Начиная с 2023 г., государственные медицинские организации должны использовать в своей работе медицинские изделия (МИ), созданные и работающие с использованием технологий искусственного интеллекта (ИИ).\r\n\r\nДанное требование предусмотрено Дополнительным соглашением о реализации проекта «Создание единого цифрового контура в здравоохранении на основе единой государственной информационной системы здравоохранения (ЕГИСЗ)», подписанного в конце декабря 2022 г. между первым заместителем Министра здравоохранения РФ В.А. Зеленским и руководителями региональных проектов создания ЕЦКЗ со стороны субъектов РФ. Согласно этому документу, в 2023 г. все субъекты РФ должны были закупить и внедрить не менее 1 МИ с ИИ, причем с обязательной интеграцией с государственной информационной системой в сфере здравоохранения субъекта РФ. В 2024 г. этот показатель увеличен до 3 МИ с ИИ.\r\n\r\nНапомним, что в соответствии с действующим в России законодательством, медицинским изделием, включая специальное программное обеспечение, является продукт, зарегистрированный Росздравнадзором и обладающий регистрационным удостоверением (РУ). Подтверждением, что медицинское изделие использует технологии ИИ, является явное указание на это в технической документации производителя на данное МИ и, соответственно, его государственная регистрация именно как продукта на основе технологий ИИ. Если производитель не указал явно в своей документации факт использования ИИ – то такое МИ не является изделием с ИИ.\r\n\r\nИспользование, включая покупку, внедрение или сопровождение, незарегистрированных медицинских изделий запрещено, за такие нарушения предусмотрены административная и уголовная ответственности.\r\n\r\nВсе сведения о зарегистрированных МИ размещаются Росздравнадзором в «Государственном реестре медицинских изделий и организаций (индивидуальных предпринимателей), осуществляющих производство и изготовление медицинских изделий» по адресу http://www.roszdravnadzor.ru/services/misearch.\r\n\r\nНа момент публикации этого материала мы нашли сведения о 37 зарегистрированных медицинских изделиях, использующих технологии ИИ и имеющих действующее регистрационное удостоверение (РУ) Росздравнадзора.",
+        "image": "blog/images/zaregistrirovannye-meditsinskie-izdeliia-ispolzuiushchie-tekhnologii-iskusst_iB7WBzT.jpg",
+        "views_count": 8,
+        "created_at": "2024-10-13T14:19:32.620Z",
+        "is_published": true
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 3,
+    "fields": {
+        "title": "Стандартизованная отчетность в разработках систем искусственного интеллекта",
+        "slug": "standartizovannaya-otchetnost-v-razrabotkah-sistem-iskusstvennogo-intellekta",
+        "content": "Применение технологий искусственного интеллекта в создании различных решений, ориентированных на медицину и здравоохранение, набирает свои обороты. Такие ИИ-системы могут применятся в различных областях, включая диагностику, планирование лечения, консультирование и превентивные меры, а также робототехнику.\r\n\r\nНесмотря на присутствие на рынке большого числа различных прикладных решений, создаваемых специализированными компаниями и научно-исследовательскими коллективами, лишь небольшое их число вышло на стадию реального клинического внедрения в медицинских организациях.\r\n\r\nОдна из основных причин этого явления состоит в недостаточно высоком уровне доверия к ИИ-системам, которое в свою очередь подпитывается низким качеством отчетности об их создании и проверке, включая доклинические и клинические исследования.\r\n\r\nОдним из основных способов снижения риска некачественной отчетности является соблюдение согласованных стандартов. Многие из них одобрены биомедицинскими журналами, описывают информацию, ожидаемую в статьях с результатами исследований и разработок, в том числе в ИИ-сфере. Как правило, они состоят из контрольного списка минимально необходимых пунктов, блок-схемы и сопровождаются более подробным документом, содержащим обоснование и образцы правильной отчетности.",
+        "image": "blog/images/standartizovannaia-otchetnost-v-razrabotkakh-sistem-iskusstvennogo-intellekta.jpg",
+        "views_count": 6,
+        "created_at": "2024-10-13T14:23:35.986Z",
+        "is_published": true
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 6,
+    "fields": {
+        "title": "Реализация национальной стратегии искусственного интеллекта в сфере здравоохранения",
+        "slug": "realizatsiya-natsionalnoj-strategii-iskusstvennogo-intellekta-v-sfere-zdravoohraneniya",
+        "content": "Указом Президента России №490 от 10.10.2019 была утверждена национальная стратегия развития искусственного интеллекта (ИИ) в Российской Федерации на период до 2030 г., направленная на то, чтобы Россия стала одной из стран-лидеров в области ИИ. Документом Правительству РФ было поручено:\r\n\r\nДо 15.12.2019 внести в национальную программу \"Цифровая экономика РФ\", в том числе разработать и утвердить федеральный проект \"Искусственный интеллект\" (на июль 2020 г. поручение не было выполнено).\r\nВыделить в федеральных бюджетах 2020-2030 г. финансирование мероприятий, направленных на реализацию Указа.\r\nЦель стратегии состоит в том, чтобы Россия вошла в группу мировых лидеров в области развития и внедрения технологий ИИ для того, чтобы побороться за будущих рынок, размер которого по прогнозам может составить 140 млрд. долл. США в 2024 г. В документе отмечено, что если у нас в стране будет недостаточный уровень развития и использования технологий ИИ, то это приведет к ее экономическому и технологическому отставанию.\r\n\r\nПланировалось, что направленный на реализацию стратегии федеральный проект «Искусственный интеллект» будет иметь бюджет порядка 124 млрд. руб., выделенных в рамках национального проекта «Цифровая экономика». Однако из-за пандемии коронавируса окончательное принятие проекта было отложено, а на уровне Минэкономразвития весной 2020 г. началось обсуждение оптимизации затрат. Одним из мнений было в качестве приоритетного направления выбрать медицину и здравоохранение с преференциями в сторону производителей и упрощением доступа к обезличенным медицинским данным.\r\n\r\nМы внимательно изучили национальную стратегию развития искусственного интеллекта и сформулировали самые главные результаты, требования и задачи, стоящие перед здравоохранением для ее реализации.",
+        "image": "blog/images/realizatsiia-natsionalnoi-strategii-iskusstvennogo-intellekta-v-sfere-zdravo_3VSnmlL.jpg",
+        "views_count": 7,
+        "created_at": "2024-10-13T14:32:35.963Z",
+        "is_published": true
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 7,
+    "fields": {
+        "title": "Технологии искусственного интеллекта в медицине и здравоохранении: позиции России на глобальном пате",
+        "slug": "tehnologii-iskusstvennogo-intellekta-v-medicine-i-zdravoohranenii-pozicii-rossii-na-globalnom-pate",
+        "content": "Во 2 номере журнала «Врач и информационные технологии» вышла статья о роли России в научных исследования и патентах в области искусственного интеллекта для здравоохранения. В работе представлен обзор мер государственной политики, направленных на развитие технологий искусственного интеллекта (ИИ) в мире и в России. \r\n\r\nС целью оценить конкурентоспособность отечественных разработок, созданных для использования технологий ИИ в медицине и здравоохранении, выполнен наукометрический и патентный анализ направления за период 2010–2019 гг. На основе анализа фронтов исследований по методологии Essential science indicators выявлены наиболее перспективные на сегодняшний день исследовательские стратегии. \r\n\r\nВыяснилось, что на глобальном публикационном ландшафте Россия занимает 27-ую позицию в мире по числу публикаций, посвященных применению ИИ в здравоохранении: на долю российских исследователей, приходится менее 1% публикаций, проиндексированных в Web of science. \r\n\r\nБезусловным лидером публикационной активности являются США, резиденты которых являются авторами более трети публикаций (35%), проиндексированных WоS CC.\r\n\r\nДля вхождения в топ 5 стран по публикационной активности в этом тематическом кластере России необходимо увеличить число публикаций более, чем в 6 раз. \r\n\r\nАнализ результатов поиска в тематической категории «Сomputer science, artificial intelligence» показал, что из 316 российских организаций только 44 (14%) имеют публикации, выполненные в коллаборации с индустриальным сектором.\r\n\r\nНаиболее высокий показатель Industry Collaborations отмечен для МГТУ им. Н. З. Баумана, Института прикладной математики имени М. В. Келдыша, МГУ им. М. В. Ломоносова. Уровень кооперации остальных исследовательских организаций с предприятиями реального сектора экономики, отраженный в публикациях, следует оценивать как низкий.\r\n\r\nНа ландшафте, сформированном патентными документами, защищающими технические решения в области «ИИ в медицине», Россия занимает скромные позиции, не подтверждающие ее намерения вступить в борьбу за перспективные рынки товаров и услуг, созданных на базе этих технологий. Из 150 патентов РФ, релевантных поисковому образу, только 50 имеют российский приоритет и только 12 патентов российских разработчиков выданы в зарубежных патентных ведомствах.\r\n\r\nАвторы статьи отметили, что развитие технологий ИИ в целом и сектора медицинского назначения в частности, является четко оформленным и восходящим трендом глобальной научно-технологической сферы. Конкурентным преимуществом России является наличие большого количества высококвалифицированных специалистов в сфере ИИ, которые способны внести значительный вклад в развитие российской цифровой экономики.\r\n\r\nПолный текст публикации Куракова Н. Г., Цветкова Л. А., Черченко О.В. \"Технологии искусственного интеллекта в медицине и здравоохранении: позиции России на глобальном патентном и публикационном ландшафте\"  в журнале «Врач и информационный технологии»",
+        "image": "blog/images/tekhnologii-iskusstvennogo-intellekta-v-meditsine-i-zdravookhranenii-pozitsi_lqEcCQB.jpg",
+        "views_count": 4,
+        "created_at": "2024-10-13T14:34:36.351Z",
+        "is_published": true
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 8,
+    "fields": {
+        "title": "Обзор аналитических отчетов об искусственном интеллекте для медицины",
+        "slug": "obzor-analiticheskih-otchetov-ob-iskusstvennom-intellekte-dlya-mediciny",
+        "content": "В последнее время вышло сразу несколько интересных аналитических отчетов, затрагивающих тему искусственного интеллекта в медицине и здравоохранении. Приведем наиболее интересные цифры и выводы из них.\r\n\r\nKLAS Research и Колледж руководителей по управлению информацией в области здравоохранения (CHIME) опубликовали отчет «Healthcare AI 2019. Actualizing the potential of artificial intelligence. A KLAS-CHIME Report» первых реальных кейсов встраивания ИИ-систем в практическую медицину, которые действительно демонстрируют положительную эффективность, такую как например прогнозирование повторных госпитализаций или снижение необоснованных вызовов неотложной помощи. KLAS и CHIME провели опрос среди 57 медицинских организаций, которые недавно внедрили системы на основе машинного обучения (ML) и обработки естественного языка (NLP), с целью оценки достижений, достигнутых в клинической, финансовой и операционной областях. KLAS оценил удовлетворенность клиентов для шести ведущих поставщиков ИИ для здравоохранения: Jvion, DataRobot, KenSci, Clinithink, IBM Watson Health and Health Catalyst. Несмотря на сформированное мнение о неудачах IBM Watson, авторы исследования пришли к выводу, что корпорации IBM удалось все-таки исправить ситуацию со своим продуктом через сосредоточенность на узких областях применения. Отчет доступен тут: https://klasresearch.com/report/healthcare-ai-2019/1657\r\n\r\nOptumIQ опубликовали отчет «Annual Survey on AI in Health Care», в котором проанализировал опрос 500 лидеров и руководителей отрасли здравоохранения и пришел к выводу, что число внедрений ИИ в медицине увеличилось почти на 88% по сравнению с предыдущим годом. Авторы отмечают повышение уверенности лидеров здравоохранения в ИИ и рост инвестиций в это направление. Более того, 9 из 10 лидеров уверены, что затраты на ИИ окупятся, причем половина считает, что менее чем за 3 года. Отчет доступен тут: https://cdn-aem.optum.com/content/dam/optum3/optum/\r\n\r\nCB Insights опубликовала отчет, согласно которому интерес инвесторов к искусственному интеллекту для медицины и здравоохранения резко вырос в 2019 г. В целом объем инвестиций в эту тему составил 4 млрд. долл. и 367 сделки. Для сравнения, в 2018 г. суммарный объем инвестиций в это направление составил 2,7 млрд. долл. и 264 сделки. Вот лишь несколько примеров крупных инвестиций в 2019 г.: Babylon Health, британский чат-бот AI, собрал 550 миллионов долларов. Компания Tempus, использующая AI для анализа данных о состоянии здоровья, получила финансирование в размере 200 миллионов долларов, а компания Recursion Pharmaceuticals, занимающаяся поиском лекарств, получила 121 миллион долларов в рамках цикла финансирования серии C. Freenome, компания, использующая искусственный интеллект для раннего выявления рака, в июле 2019 г. закрыла раунд финансирования серии B стоимостью 160 миллионов долларов.",
+        "image": "blog/images/obzor-analiticheskikh-otchetov-ob-iskusstvennom-intellekte-dlia-meditsiny_wMtExg1.jpg",
+        "views_count": 7,
+        "created_at": "2024-10-13T14:48:26.189Z",
+        "is_published": true
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 9,
+    "fields": {
+        "title": "Почти половина врачей обеспокоены использованием искусственного интеллекта",
+        "slug": "pochti-polovina-vrachej-obespokoeny-ispolzovaniem-iskusstvennogo-intellekta",
+        "content": "Исследование Medscape показало, что пока применение искусственного интеллекта находится в начальном состоянии и еще добивается масштабного влияния на врачебную практику. Но все будет меняться очень быстро. \r\n\r\nИскусственный интеллект, как новая технология в здравоохранении, сейчас пользуется большим спросом. По данным опроса Medscape только 20% врачей говорят, что ИИ изменит подход к практической медицине, но для внедрения ИИ в этой сфере предстоит сделать еще очень многое.\r\n\r\nСогласно исследованию, проведенному среди 1500 врачей в Европе, Латинской Америке и США, большинство врачей обеспокоены или испытывают недоверие в отношении ИИ.\r\n\r\nВрачи из США выразили наибольший скептицизм (49%), 35% врачей в Европе и 30% врачей в Латинской Америке высказали, что им неудобен ИИ.\r\n\r\nХотя число врачей, утверждающих, что ИИ меняет врачебную практику, выросло по сравнению с прошлогодним опросом, с 15% до 20%, результаты показывают, что применение ИИ масштабно еще не влияет на общую врачебную практику и находится на начальной стадии применения.\r\n\r\nСтоит отметить, что политическая ситуация в секторе здравоохранения меняется постоянно, особенно в регулировании технологии и тенденциях, формирующих рынок.\r\n\r\nПо данным исследования, врачам более комфортно использовать инструменты на основе искусственного интеллекта в частной жизни — 50% американских врачей используют Google Home, Alexa или что-то подобное — но только 7% используют их в профессиональных целях. Что касается технологии голосового управления, то 75% врачей по какой-либо причине её не используют.\r\n\r\nТолько 19% врачей заявили, что им было бы комфортно использовать голосовые технологии во время консультации пациента, и почти каждый третий врач считает, что их роль может быть поставлена под угрозу применением программного обеспечения на основе ИИ. \r\n\r\nТем не менее технология ИИ врачам интересна. 70% опрошенных врачей отметили, что применение ИИ позволяет им принимать более точные решения.",
+        "image": "blog/images/pochti-polovina-amerikanskikh-vrachei-obespokoeny-ispolzovaniem-programmnogo_GVMVO47.jpg",
+        "views_count": 3,
+        "created_at": "2024-10-13T14:54:35.845Z",
+        "is_published": true
+    }
+}
+]

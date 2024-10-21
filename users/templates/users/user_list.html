@@ -1,0 +1,38 @@
+{% extends 'users/user_base.html' %}
+{% block content %}
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">email</th>
+        <th scope="col">Телефон</th>
+        <th scope="col">Страна</th>
+        {% if perms.mailing.can_disable_mailing_status and perms.users.can_edit_is_active_users %}
+        <th scope="col">Блокировка</th>
+        {% endif %}
+
+    </tr>
+    </thead>
+    <tbody>
+    {% for object in object_list %}
+    <tr>
+        <th scope="row">{{ object.pk }}</th>
+        <td> {{object.email }}</td>
+        <td>{{ object.phone }}</td>
+        <td>{{ object.a_country }}</td>
+
+        {% if perms.users.can_edit_is_active_users and perms.mailing.can_disable_mailing_status %}
+        <td>
+            <a type="submit" class="p-2 btn btn-danger"
+            href="{% url 'users:block_user' object.pk %}">
+                Заблокировать
+            </a>
+        </td>
+        {% endif %}
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

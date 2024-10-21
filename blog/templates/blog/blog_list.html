@@ -1,0 +1,46 @@
+{% extends 'blog/blog_base.html' %}
+{% load my_tags %}
+{% block content %}
+
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    {% for object in object_list %}
+    <div class="col mb-4">
+        {% if object.is_published is True %}
+        <div class="card h-100">
+            <img src="{{ object.image | media_filter }}"
+                 class="img-fluid rounded-start" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{object.title}}</h5>
+                <p class="card-text">{{object.content | truncatechars:100}}</p>
+                <p class="card-text">
+                    {{object.created_at}} | Просмотров: {{object.views_count}}
+                </p>
+                <div class="card-footer">
+                    <small class="btn-body-secondary">
+
+                        <a class="p-2 btn btn-primary ms-auto mb-2"
+                           href="{% url 'blog:blog_detail' object.slug %}"
+                           role="button">Посмотреть</a>
+
+                        {% if user.is_superuser %}
+                        <a class="p-2 btn btn-warning ms-auto mb-2"
+                           href="{% url 'blog:blog_update' object.slug %}"
+                           role="button">Редактировать</a>
+
+                        <a class="p-2 btn btn-danger ms-auto mb-2"
+                           href="{% url 'blog:blog_delete' object.slug %}"
+                           role="button">Удалить</a>
+                         {% endif %}
+
+                    </small>
+                </div>
+
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'blog/blog_base.html' %}
+{% load my_tags %}
+{% block content %}
+
+<div class="card">
+    <img src="{{ object.image | media_filter }}"
+         class="img-fluid rounded-start" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{object.title}}</h5>
+        <p class="card-text">{{object.content | linebreaks }}</p>
+        <p class="card-text">
+            {{object.created_at}} | Просмотров: {{object.views_count}}
+        </p>
+
+            <button onclick="window.history.back();"
+                    class="btn btn-primary mb-2">Назад</button>
+
+        {% if user.is_superuser %}
+        <a class="p-2 btn btn-warning ms-auto mb-2"
+           href="{% url 'blog:blog_update' object.slug %}"
+           role="button">Редактировать</a>
+
+        <a class="p-2 btn btn-danger ms-auto mb-2"
+           href="{% url 'blog:blog_delete' object.slug %}"
+           role="button">Удалить</a>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

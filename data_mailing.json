@@ -1,0 +1,525 @@
+[
+{
+    "model": "mailing.client",
+    "pk": 1,
+    "fields": {
+        "email": "Yardrey@yandex.ru",
+        "last_name": "Подшивалов",
+        "first_name": "Андрей",
+        "patronymic": "Алексеевич",
+        "a_comment": "Юрист-блогер. Владелец компании Ярдрей.",
+        "date_of_birth": "1982-09-21",
+        "owner": [
+            1,
+            9
+        ]
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 2,
+    "fields": {
+        "email": "Durov@yandex.ru",
+        "last_name": "Дуров",
+        "first_name": "Павел",
+        "patronymic": "Валерьевич",
+        "a_comment": "Предприниматель в сфере информационных технологий. Основал социальную сеть «ВКонтакте». Владелец  мессенджера Telegram, который заявляет высокую степень конфиденциальности данных.",
+        "date_of_birth": "1984-10-10",
+        "owner": []
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 3,
+    "fields": {
+        "email": "Evgeniy@yandex.ru",
+        "last_name": "Касперский",
+        "first_name": "Евгений",
+        "patronymic": "Валентинович",
+        "a_comment": "Российский программист, один из ведущих мировых специалистов в сфере информационной безопасности. Один из основателей, основной владелец и нынешний глава АО «Лаборатория Касперского».",
+        "date_of_birth": "1965-10-04",
+        "owner": []
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 4,
+    "fields": {
+        "email": "Bogatyr28@yandex.ru",
+        "last_name": "Богатырев",
+        "first_name": "Святослав",
+        "patronymic": "Силович",
+        "a_comment": "",
+        "date_of_birth": null,
+        "owner": []
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 5,
+    "fields": {
+        "email": "user4@sky.com",
+        "last_name": "Иванов",
+        "first_name": "Иван",
+        "patronymic": "Иваныч",
+        "a_comment": "",
+        "date_of_birth": "1990-03-15",
+        "owner": [
+            9
+        ]
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 12,
+    "fields": {
+        "email": "test2@mail.ru",
+        "last_name": null,
+        "first_name": null,
+        "patronymic": null,
+        "a_comment": "",
+        "date_of_birth": null,
+        "owner": [
+            1
+        ]
+    }
+},
+{
+    "model": "mailing.message",
+    "pk": 1,
+    "fields": {
+        "letter_subject": "Германия: Замок Гогенцоллерн",
+        "image_message": "mailings/images/zamok-gogencollern-1920x1080-zamok-gogencollern-16630.jpg",
+        "letter_body": "Однодневная поездка на юг страны, в Швабский Альб. На горном конусе лежит внушительный Гогенцоллернбург, прародина Гогенцоллернов.\r\n\r\nДом Гогенцоллернов был когда-то одной из самых могущественных семейных династий на немецкой земле с почти 1000-летней традицией. Ее самым известным сыном был Фридрих Великий, король Пруссии. Наслаждайтесь фантастическим видом с высоты метров 850 укреплений замка на всю окружающую территорию. У вас будет достаточно времени, чтобы прогуляться вокруг крепостных валов, башен и двора этого впечатляющего горного замка.\r\n\r\nОсновной момент дня: посещение интерьера в сопровождении гида. Великолепные залы, залы и жилые комнаты, украшенные картинами, драгоценным фарфором, кованым железом из золота и серебра и историческими облачениями.",
+        "owner": 1
+    }
+},
+{
+    "model": "mailing.message",
+    "pk": 3,
+    "fields": {
+        "letter_subject": "Места силы Байкала. Летнее или осеннее путешествие",
+        "image_message": "mailings/images/BS_2b71106b7b32579afef2d0863df915b1ad7c214f74df09b77807167217aedb0c.jpg",
+        "letter_body": "Отправьтесь на удивительный Байкал!\r\n\r\nВ этом туре можно сделать множество фотографий разных мест Байкала.\r\n\r\nМы побываем на острове Ольхон, в Тункинской долине, погуляем по берегу Кынгарги, где увидим таинственные сооружения из камней, приносящие удачу.",
+        "owner": 1
+    }
+},
+{
+    "model": "mailing.message",
+    "pk": 4,
+    "fields": {
+        "letter_subject": "Тестовое сообщение пользователя",
+        "image_message": "",
+        "letter_body": "Тестовое сообщение пользователя",
+        "owner": 9
+    }
+},
+{
+    "model": "mailing.mailing",
+    "pk": 1,
+    "fields": {
+        "mailing_name": "Туризм",
+        "datetime_first_mailing": "2024-10-17T14:20:05Z",
+        "next_datetime_mailing": "2024-10-17T14:40:00Z",
+        "last_datetime_mailing": "2024-10-17T14:40:00Z",
+        "period_mailing": 1,
+        "mailing_status": 2,
+        "message": 1,
+        "owner": 1,
+        "clients": [
+            4
+        ]
+    }
+},
+{
+    "model": "mailing.mailing",
+    "pk": 6,
+    "fields": {
+        "mailing_name": "Test",
+        "datetime_first_mailing": "2024-10-20T12:08:00Z",
+        "next_datetime_mailing": "2024-10-20T12:13:00Z",
+        "last_datetime_mailing": "2024-10-20T12:13:00Z",
+        "period_mailing": 1,
+        "mailing_status": 3,
+        "message": 3,
+        "owner": 9,
+        "clients": [
+            4
+        ]
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 232,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:01:53.650Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 233,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:01:56.023Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 234,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:02:52.685Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 235,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:02:55.051Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 236,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:03:52.684Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 237,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:03:54.961Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 238,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:04:52.813Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 239,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:06:12.452Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 240,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:10:50.229Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 241,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:10:53.004Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 242,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:11:49.516Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 243,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:12:36.850Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 244,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:12:49.558Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 245,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:13:49.436Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 246,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:20:43.221Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 247,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:20:45.564Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 248,
+    "fields": {
+        "datetime_attempt": "2024-10-20T11:57:18.448Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 249,
+    "fields": {
+        "datetime_attempt": "2024-10-20T11:58:22.787Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 250,
+    "fields": {
+        "datetime_attempt": "2024-10-20T11:58:25.014Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 251,
+    "fields": {
+        "datetime_attempt": "2024-10-20T11:59:21.720Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 252,
+    "fields": {
+        "datetime_attempt": "2024-10-20T11:59:24.122Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 253,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:00:21.789Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 254,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:00:24.035Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 255,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:01:21.892Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 256,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:01:24.018Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 257,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:02:21.692Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 258,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:02:24.193Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 259,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:06:44.874Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 260,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:06:45.162Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 261,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:08:43.907Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 262,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:08:44.309Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 263,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:10:37.243Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 264,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:11:36.186Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 265,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:13:37.678Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+}
+]
