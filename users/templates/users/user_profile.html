@@ -1,0 +1,30 @@
+{% extends 'users/index.html' %}
+{% block content %}
+
+<div class="card">
+
+    <div class="card-body">
+        <h5 class="card-title">{{ object.email }}</h5>
+        <p class="card-text">Телефон: {{object.phone}} </p>
+        <p class="card-text">Страна: {{ object.a_country }}</p>
+
+
+        <div class="card-footer">
+
+            <a class="btn btn-primary mb-2"
+                   href="/"
+                   role="button"
+                   style="margin-right: 10px;">Назад</a>
+
+            <a class="p-2 btn btn-warning mb-2"
+               href="{% url 'users:update_profile' %}"
+               role="button"
+               style="margin-right: 10px;">Редактировать</a>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+

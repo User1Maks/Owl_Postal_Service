@@ -8,11 +8,13 @@
         <p class="card-text">Дата и время отправки рассылки:
             {{object.datetime_first_mailing}}</p>
         <p class="card-text">Дата и время следующей отправки рассылки:
-            {{ object.next_datetime_mailing }}</p>
+            {{object.next_datetime_mailing}}</p>
         <p class="card-text">Дата и время последней отправки рассылки:
-            {{ object.last_datetime_mailing }}</p>
-        <p class="card-text">Период рассылки: {{ object.period_mailing }}</p>
-        <p class="card-date">Статус рассылки: {{ object.mailing_status }}</p>
+            {{object.last_datetime_mailing}}</p>
+        <p class="card-text">Период рассылки:
+            {{ object.get_period_mailing_display }}</p>
+        <p class="card-date">Статус рассылки:
+            {{ object.get_mailing_status_display }}</p>
         <p class="card-date">Сообщение рассылки: {{object.message}}</p>
 
         {% if perms.mailing.can_disable_mailing_status or perms.users.can_edit_is_active_users %}
@@ -22,29 +24,39 @@
 
         <div class="card-footer">
 
-            <a class="p-2 btn btn-primary mb-2"
-               href="{% url 'mailing:mailing_list' %}"
-               role="button"
-               style="margin-right: 10px;">Назад</a>
+                {% if perms.mailing.view_mailing %}
+                <a class="btn btn-primary mb-2"
+                   href="{% url 'mailing:mailing_detail' object.pk %}"
+                   role="button">Открыть</a>
+                {% endif %}
 
-            {% if user == object.owner %}
+                {% if perms.mailing.view_mailing %}
+                    {% if object.mailing_status == 2 %}
+                    <button class="btn btn-secondary mb-2" disabled>Отключено</button>
+                    {% else %}
+                    <a class="btn btn-warning mb-2"
+                       href="{% url 'mailing:cancel_mailing' object.pk %}"
+                       role="button">Отключить</a>
+                    {% endif %}
+                {% endif %}
 
-            <a class="p-2 btn btn-warning mb-2"
-               href="{% url 'mailing:mailing_update' object.pk %}"
-               role="button"
-               style="margin-right: 10px;">Редактировать</a>
+                {% if perms.mailing.change_mailing %}
+                <a class="p-2 btn btn-warning mb-2"
+                   href="{% url 'mailing:mailing_update' object.pk %}"
+                   role="button">Редактировать</a>
+                {% endif %}
 
-            <a class="p-2 btn btn-danger mb-2"
-               href="{% url 'mailing:mailing_delete' object.pk %}"
-               role="button"
-               style="margin-right: 10px;">Удалить</a>
+                {% if perms.mailing.delete_mailing %}
+                <a class="p-2 btn btn-danger mb-2"
+                   href="{% url 'mailing:mailing_delete' object.pk %}"
+                   role="button">Удалить</a>
+                {% endif %}
 
-            {% endif %}
-
-            <a class="btn btn-warning mb-2"
-               href="#"
-               role="button"
-               style="margin-right: 10px;">Отключить</a>
+             {% if perms.mailing.view_mailing %}
+                <a class="btn btn-primary mb-2"
+                   href="{% url 'mailing:mailing_list' %}"
+                   role="button">Назад</a>
+                {% endif %}
 
 
         </div>

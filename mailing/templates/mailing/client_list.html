@@ -13,24 +13,27 @@
         <th scope="col">Дата рождения</th>
     </tr>
     </thead>
-    {% if user == object.owner or perms.mailing.can_disable_mailing_status and perms.users.can_edit_is_active_users %}
+
     {% for object in object_list %}
-    <tbody>
-    <tr>
-        <th scope="row">{{ object.pk }}</th>
-        <td><a href="{% url 'mailing:client_detail' object.pk %}">
-            {{object.email }}</a></td>
 
-        <td>{{ object.last_name }}</td>
-        <td>{{ object.first_name }}</td>
-        <td>{{ object.patronymic }}</td>
+        <tbody>
+        {% if user in object.owner.all %}
+        <tr>
+            <th scope="row">{{ object.pk }}</th>
+            <td><a href="{% url 'mailing:client_detail' object.pk %}">
+                {{object.email }}</a></td>
 
-        <td>{{ object.a_comment | truncatechars:20 }}</td>
-        <td>{{ object.date_of_birth }}</td>
-    </tr>
-    </tbody>
+            <td>{{ object.last_name }}</td>
+
+            <td>{{ object.first_name }}</td>
+            <td>{{ object.patronymic }}</td>
+
+            <td>{{ object.a_comment | truncatechars:20 }}</td>
+            <td>{{ object.date_of_birth }}</td>
+
+        </tr>
+        {% endif %}
+        </tbody>
     {% endfor %}
-    {% endif %}
 </table>
-
 {% endblock %}

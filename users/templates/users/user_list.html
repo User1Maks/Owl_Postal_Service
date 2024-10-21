@@ -14,24 +14,25 @@
 
     </tr>
     </thead>
-    {% for object in object_list %}
     <tbody>
+    {% for object in object_list %}
     <tr>
         <th scope="row">{{ object.pk }}</th>
         <td> {{object.email }}</td>
         <td>{{ object.phone }}</td>
         <td>{{ object.a_country }}</td>
 
-        {% if perms.mailing.can_disable_mailing_status and perms.users.can_edit_is_active_users %}
+        {% if perms.users.can_edit_is_active_users and perms.mailing.can_disable_mailing_status %}
         <td>
-            <button type="submit" class="p-2 btn btn-danger">
+            <a type="submit" class="p-2 btn btn-danger"
+            href="{% url 'users:block_user' object.pk %}">
                 Заблокировать
-            </button>
+            </a>
         </td>
         {% endif %}
     </tr>
-    </tbody>
     {% endfor %}
+    </tbody>
 </table>
 
 {% endblock %}

@@ -1,10 +1,12 @@
 from venv import logger
 
+from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.mixins import (
     LoginRequiredMixin,
     PermissionRequiredMixin,
     UserPassesTestMixin
 )
+from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse, reverse_lazy
 from django.views.generic import (
     ListView,
@@ -17,7 +19,7 @@ from django.views.generic import (
 
 from blog.services import random_blog_articles
 from mailing.forms import MessageForm, ClientForm, MailingForm
-from mailing.models import Client, Message, Mailing
+from mailing.models import Client, Message, Mailing, MailingAttempt
 
 
 class HomeTemplateView(TemplateView):
@@ -25,33 +27,19 @@ class HomeTemplateView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        try:
-            context['random_articles'] = random_blog_articles(context)
-        except AttributeError as err:
-            logger.error(err)
-            context['random_articles'] = []
+
+        context['random_articles'] = random_blog_articles(self.request)
 
         # Получаем данные о рассылках и клиентах
-        try:
-            # Общее количество рассылок
-            number_of_mailings = Mailing.objects.all().count()
-        except AttributeError as err:
-            logger.error(err)
-            number_of_mailings = 0
 
-        try:
-            # Количество активных рассылок
-            active_mailings = Mailing.objects.filter(mailing_status=1).count()
-        except AttributeError as err:
-            logger.error(err)
-            active_mailings = 0
+        # Общее количество рассылок
+        number_of_mailings = Mailing.objects.all().count()
 
-        try:
-            # Количество уникальных клиентов
-            unique_clients = Client.objects.distinct().count()
-        except AttributeError as err:
-            logger.error(err)
-            unique_clients = 0
+        # Количество активных рассылок
+        active_mailings = Mailing.objects.filter(mailing_status=1).count()
+
+        # Количество уникальных клиентов
+        unique_clients = Client.objects.distinct().count()
 
         context['number_of_mailings'] = number_of_mailings
         context['active_mailings'] = active_mailings
@@ -74,10 +62,10 @@ class ClientCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     def form_valid(self, form):
         """Метод для добавления ссылки на модель пользователя, которая
         заполняется автоматически"""
-        client = form.save()  # сохраняем клиента в БД
+        client = form.save(commit=False)
+        client.save()  # сначала сохраняем клиент, чтобы получить его ID
         user = self.request.user
         client.owner.add(user)
-        client.save()
         return super().form_valid(form)
 
 
@@ -132,12 +120,6 @@ class MessageDetailView(LoginRequiredMixin, PermissionRequiredMixin,
     model = Message
     permission_required = 'mailing.view_message'
 
-    # def get_object(self, queryset=None):
-    #     self.object = super().get_object(queryset)
-    #     self.object.view_counter += 1
-    #     self.object.save()
-    #     return self.object
-
 
 class MessageUpdateView(LoginRequiredMixin, PermissionRequiredMixin,
                         UpdateView):
@@ -187,6 +169,17 @@ class MailingDetailView(LoginRequiredMixin, PermissionRequiredMixin,
     permission_required = 'mailing.view_mailing'
 
 
+@login_required
+@permission_required('can_disable_mailing_status')
+def cancel_mailing(request, pk):
+    """Контролер для отключения рассылки"""
+
+    mailing = Mailing.objects.get(pk=pk)
+    mailing.mailing_status = 2
+    mailing.save()
+    return redirect(reverse('mailing:mailing_detail', args=[pk]))
+
+
 class MailingUpdateView(LoginRequiredMixin, PermissionRequiredMixin,
                         UpdateView):
     model = Mailing
@@ -209,3 +202,7 @@ class MailingDeleteView(LoginRequiredMixin, PermissionRequiredMixin,
     model = Mailing
     permission_required = 'mailing.delete_mailing'
     success_url = reverse_lazy('mailing:mailing_list')
+
+
+class MailingAttemptListView(LoginRequiredMixin, ListView):
+    model = MailingAttempt

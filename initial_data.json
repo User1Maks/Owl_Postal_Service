@@ -4017,6 +4017,357 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 310,
+    "fields": {
+        "action_time": "2024-10-16T14:32:26.684Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "manager",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 311,
+    "fields": {
+        "action_time": "2024-10-17T11:18:27.008Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "users",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 312,
+    "fields": {
+        "action_time": "2024-10-17T13:56:49.094Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u0441\\u043b\\u0435\\u0434\\u0443\\u044e\\u0449\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 313,
+    "fields": {
+        "action_time": "2024-10-17T13:59:12.146Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u0441\\u043b\\u0435\\u0434\\u0443\\u044e\\u0449\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 314,
+    "fields": {
+        "action_time": "2024-10-17T14:20:13.302Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u0414\\u0430\\u0442\\u0430 \\u0438 \\u0432\\u0440\\u0435\\u043c\\u044f \\u043f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043a\\u0438 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 315,
+    "fields": {
+        "action_time": "2024-10-17T14:20:20.243Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 316,
+    "fields": {
+        "action_time": "2024-10-20T08:42:35.765Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 317,
+    "fields": {
+        "action_time": "2024-10-20T08:50:29.499Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "manager",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 318,
+    "fields": {
+        "action_time": "2024-10-20T08:51:02.114Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "1",
+        "object_repr": "manager",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 319,
+    "fields": {
+        "action_time": "2024-10-20T10:55:54.055Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Туризм",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 320,
+    "fields": {
+        "action_time": "2024-10-20T12:17:01.343Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "Yardrey@yandex.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 321,
+    "fields": {
+        "action_time": "2024-10-20T12:17:06.811Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "Yardrey@yandex.ru",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 322,
+    "fields": {
+        "action_time": "2024-10-21T08:39:46.869Z",
+        "user": 1,
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "users",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 323,
+    "fields": {
+        "action_time": "2024-10-21T09:00:11.310Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "Тестовое сообщение пользователя",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 324,
+    "fields": {
+        "action_time": "2024-10-21T09:11:16.022Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Test",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 325,
+    "fields": {
+        "action_time": "2024-10-21T09:11:27.807Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "6",
+        "object_repr": "testuser4@sky.com",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 326,
+    "fields": {
+        "action_time": "2024-10-21T09:11:35.364Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "Yardrey@yandex.ru",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 327,
+    "fields": {
+        "action_time": "2024-10-21T09:47:01.228Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "6",
+        "object_repr": "testuser4@sky.com",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 328,
+    "fields": {
+        "action_time": "2024-10-21T09:47:05.076Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "7",
+        "object_repr": "test2@mail.ru",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 329,
+    "fields": {
+        "action_time": "2024-10-21T09:47:08.503Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "Yardrey@yandex.ru",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 330,
+    "fields": {
+        "action_time": "2024-10-21T10:07:07.987Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "11",
+        "object_repr": "test5@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 331,
+    "fields": {
+        "action_time": "2024-10-21T10:07:07.991Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "10",
+        "object_repr": "test4@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 332,
+    "fields": {
+        "action_time": "2024-10-21T10:07:07.991Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "9",
+        "object_repr": "test4@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 333,
+    "fields": {
+        "action_time": "2024-10-21T10:07:07.992Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "8",
+        "object_repr": "test3@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 334,
+    "fields": {
+        "action_time": "2024-10-21T10:07:07.992Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "7",
+        "object_repr": "test2@mail.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 335,
+    "fields": {
+        "action_time": "2024-10-21T10:07:07.993Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "6",
+        "object_repr": "testuser4@sky.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 336,
+    "fields": {
+        "action_time": "2024-10-21T10:07:14.225Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "Yardrey@yandex.ru",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
     "model": "auth.permission",
     "pk": 1,
     "fields": {
@@ -4526,8 +4877,10 @@
     "fields": {
         "name": "manager",
         "permissions": [
+            52,
             49,
             28,
+            51,
             50,
             46,
             48
@@ -4540,6 +4893,7 @@
     "fields": {
         "name": "users",
         "permissions": [
+            56,
             21,
             22,
             23,
@@ -4550,10 +4904,14 @@
             26,
             27,
             28,
+            32,
             33,
             34,
             35,
-            36
+            36,
+            51,
+            46,
+            48
         ]
     }
 },
@@ -4671,10 +5029,10 @@
 },
 {
     "model": "sessions.session",
-    "pk": "u52hdl9xay7109sgrhhsot4m620fbq50",
+    "pk": "m48qcvgaxqd4nouhvb0fccs3qcwiuwfb",
     "fields": {
-        "session_data": ".eJxVjE0OgjAYRO_StWkKLbR16Z4zNN9fLWogobAy3l1IWGgyq3lv5q0SbGtJW5UljayuqlGX3w6BnjIdgB8w3WdN87QuI-pD0SetephZXrfT_TsoUMu-dt5jJCfYgTcRsPcBrJM91DeGI0qwnBmoQQJrWySXxcTcIgTiLqjPF_-MOR0:1szzQM:Ox0gApT4sy9NDpHwcVyXeXlV0g9zrmpYQWSbO8MGCD8",
-        "expire_date": "2024-10-27T14:18:22.905Z"
+        "session_data": ".eJxVjMEKwyAQRP_FcxGNRN0ee-83iOuuNW1RiMkp9N-bQA7taWDem9lEiOtSwtp5DhOJqwBx-e0wphfXA9Az1keTqdVlnlAeijxpl_dG_L6d7t9Bib3sazewipw1KENsEyXLll2GPbJRo_beowPMoyWt0bBySAo4G4ppAMji8wUBtDi0:1t2pUJ:x5ZaAnL6kqSQYVEVmS3kFZhQhS4yA7cPOADIWpeUaPY",
+        "expire_date": "2024-11-04T10:18:11.217Z"
     }
 },
 {
@@ -4687,7 +5045,10 @@
         "patronymic": "Алексеевич",
         "a_comment": "Юрист-блогер. Владелец компании Ярдрей.",
         "date_of_birth": "1982-09-21",
-        "owner": 1
+        "owner": [
+            1,
+            9
+        ]
     }
 },
 {
@@ -4700,7 +5061,7 @@
         "patronymic": "Валерьевич",
         "a_comment": "Предприниматель в сфере информационных технологий. Основал социальную сеть «ВКонтакте». Владелец  мессенджера Telegram, который заявляет высокую степень конфиденциальности данных.",
         "date_of_birth": "1984-10-10",
-        "owner": 1
+        "owner": []
     }
 },
 {
@@ -4713,7 +5074,7 @@
         "patronymic": "Валентинович",
         "a_comment": "Российский программист, один из ведущих мировых специалистов в сфере информационной безопасности. Один из основателей, основной владелец и нынешний глава АО «Лаборатория Касперского».",
         "date_of_birth": "1965-10-04",
-        "owner": 1
+        "owner": []
     }
 },
 {
@@ -4726,7 +5087,37 @@
         "patronymic": "Силович",
         "a_comment": "",
         "date_of_birth": null,
-        "owner": 1
+        "owner": []
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 5,
+    "fields": {
+        "email": "user4@sky.com",
+        "last_name": "Иванов",
+        "first_name": "Иван",
+        "patronymic": "Иваныч",
+        "a_comment": "",
+        "date_of_birth": "1990-03-15",
+        "owner": [
+            9
+        ]
+    }
+},
+{
+    "model": "mailing.client",
+    "pk": 12,
+    "fields": {
+        "email": "test2@mail.ru",
+        "last_name": null,
+        "first_name": null,
+        "patronymic": null,
+        "a_comment": "",
+        "date_of_birth": null,
+        "owner": [
+            1
+        ]
     }
 },
 {
@@ -4750,15 +5141,25 @@
     }
 },
 {
+    "model": "mailing.message",
+    "pk": 4,
+    "fields": {
+        "letter_subject": "Тестовое сообщение пользователя",
+        "image_message": "",
+        "letter_body": "Тестовое сообщение пользователя",
+        "owner": 9
+    }
+},
+{
     "model": "mailing.mailing",
     "pk": 1,
     "fields": {
         "mailing_name": "Туризм",
-        "datetime_first_mailing": "2024-10-01T17:27:00Z",
-        "next_datetime_mailing": "2024-10-01T17:29:00Z",
-        "last_datetime_mailing": "2024-10-01T17:30:00Z",
+        "datetime_first_mailing": "2024-10-17T14:20:05Z",
+        "next_datetime_mailing": "2024-10-17T14:40:00Z",
+        "last_datetime_mailing": "2024-10-17T14:40:00Z",
         "period_mailing": 1,
-        "mailing_status": 3,
+        "mailing_status": 2,
         "message": 1,
         "owner": 1,
         "clients": [
@@ -4767,11 +5168,402 @@
     }
 },
 {
+    "model": "mailing.mailing",
+    "pk": 6,
+    "fields": {
+        "mailing_name": "Test",
+        "datetime_first_mailing": "2024-10-20T12:08:00Z",
+        "next_datetime_mailing": "2024-10-20T12:13:00Z",
+        "last_datetime_mailing": "2024-10-20T12:13:00Z",
+        "period_mailing": 1,
+        "mailing_status": 3,
+        "message": 3,
+        "owner": 9,
+        "clients": [
+            4
+        ]
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 232,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:01:53.650Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 233,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:01:56.023Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 234,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:02:52.685Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 235,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:02:55.051Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 236,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:03:52.684Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 237,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:03:54.961Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 238,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:04:52.813Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 239,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:06:12.452Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 240,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:10:50.229Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 241,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:10:53.004Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 242,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:11:49.516Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 243,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:12:36.850Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 244,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:12:49.558Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 245,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:13:49.436Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 246,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:20:43.221Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 247,
+    "fields": {
+        "datetime_attempt": "2024-10-17T14:20:45.564Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 1
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 248,
+    "fields": {
+        "datetime_attempt": "2024-10-20T11:57:18.448Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 249,
+    "fields": {
+        "datetime_attempt": "2024-10-20T11:58:22.787Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 250,
+    "fields": {
+        "datetime_attempt": "2024-10-20T11:58:25.014Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 251,
+    "fields": {
+        "datetime_attempt": "2024-10-20T11:59:21.720Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 252,
+    "fields": {
+        "datetime_attempt": "2024-10-20T11:59:24.122Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 253,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:00:21.789Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 254,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:00:24.035Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 255,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:01:21.892Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 256,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:01:24.018Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 257,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:02:21.692Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 258,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:02:24.193Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 259,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:06:44.874Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 260,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:06:45.162Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 261,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:08:43.907Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 262,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:08:44.309Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 263,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:10:37.243Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 264,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:11:36.186Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
+    "model": "mailing.mailingattempt",
+    "pk": 265,
+    "fields": {
+        "datetime_attempt": "2024-10-20T12:13:37.678Z",
+        "attempt_status": true,
+        "service_response": "1",
+        "client": 4,
+        "mailing": 6
+    }
+},
+{
     "model": "users.user",
     "pk": 1,
     "fields": {
         "password": "pbkdf2_sha256$600000$ZkQhOjoKNXO2pozK2NVr2b$QUmxgEjWxSlvx05x/M+Fd+n3e1LsPrmqqMXMN3/SHyU=",
-        "last_login": "2024-10-13T14:18:22.904Z",
+        "last_login": "2024-10-21T10:06:52.471Z",
         "is_superuser": true,
         "first_name": "Admin",
         "last_name": "Adminov",
@@ -4792,7 +5584,7 @@
     "pk": 8,
     "fields": {
         "password": "pbkdf2_sha256$600000$zWfo2nIlzyOKEMdvRdSYhR$Ps6cpjdkThFsn8befVTYIMfePJmTQKwDyBOvzp9KSzw=",
-        "last_login": "2024-10-08T13:45:01.201Z",
+        "last_login": "2024-10-21T09:29:14.622Z",
         "is_superuser": false,
         "first_name": "",
         "last_name": "",
@@ -4815,7 +5607,7 @@
     "pk": 9,
     "fields": {
         "password": "pbkdf2_sha256$600000$F7D61ariXR7IGUXWbFry4e$5UtuX9AxnEs0DFKsD4Fpl5zFaAEqhEz0nGefjMvPngc=",
-        "last_login": "2024-10-13T14:17:56.595Z",
+        "last_login": "2024-10-21T10:18:11.216Z",
         "is_superuser": false,
         "first_name": "",
         "last_name": "",
@@ -4841,7 +5633,7 @@
         "slug": "normativno-pravovoe-regulirovanie-iskusstvennogo-intellekta-v-zdravoohranenii-rossii",
         "content": "В настоящее время в России идет активное внедрение систем искусственного интеллекта в сфере здравоохранения. Учитывая, что разработчики ИИ-решений предлагают их практически для всех направлений, включая лечебно-диагностические процессы – регуляторы стараются не отставать в части нормативно-правового и технического регулирования этой отрасли, чтобы обеспечить баланс между созданием условий для развития отечественного рынка и вместе с этим – контролем эффективности и безопасности продуктов.",
         "image": "blog/images/normativno-pravovoe-regulirovanie-iskusstvennogo-intellekta-v-zdravookhranen_1skSJA5.jpg",
-        "views_count": 40,
+        "views_count": 48,
         "created_at": "2024-10-08T15:56:09.382Z",
         "is_published": true
     }
@@ -4854,7 +5646,7 @@
         "slug": "zaregistrirovannye-medicinskie-izdeliya-ispolzuyushie-tehnologii-iskusstvennogo-intellekta",
         "content": "Начиная с 2023 г., государственные медицинские организации должны использовать в своей работе медицинские изделия (МИ), созданные и работающие с использованием технологий искусственного интеллекта (ИИ).\r\n\r\nДанное требование предусмотрено Дополнительным соглашением о реализации проекта «Создание единого цифрового контура в здравоохранении на основе единой государственной информационной системы здравоохранения (ЕГИСЗ)», подписанного в конце декабря 2022 г. между первым заместителем Министра здравоохранения РФ В.А. Зеленским и руководителями региональных проектов создания ЕЦКЗ со стороны субъектов РФ. Согласно этому документу, в 2023 г. все субъекты РФ должны были закупить и внедрить не менее 1 МИ с ИИ, причем с обязательной интеграцией с государственной информационной системой в сфере здравоохранения субъекта РФ. В 2024 г. этот показатель увеличен до 3 МИ с ИИ.\r\n\r\nНапомним, что в соответствии с действующим в России законодательством, медицинским изделием, включая специальное программное обеспечение, является продукт, зарегистрированный Росздравнадзором и обладающий регистрационным удостоверением (РУ). Подтверждением, что медицинское изделие использует технологии ИИ, является явное указание на это в технической документации производителя на данное МИ и, соответственно, его государственная регистрация именно как продукта на основе технологий ИИ. Если производитель не указал явно в своей документации факт использования ИИ – то такое МИ не является изделием с ИИ.\r\n\r\nИспользование, включая покупку, внедрение или сопровождение, незарегистрированных медицинских изделий запрещено, за такие нарушения предусмотрены административная и уголовная ответственности.\r\n\r\nВсе сведения о зарегистрированных МИ размещаются Росздравнадзором в «Государственном реестре медицинских изделий и организаций (индивидуальных предпринимателей), осуществляющих производство и изготовление медицинских изделий» по адресу http://www.roszdravnadzor.ru/services/misearch.\r\n\r\nНа момент публикации этого материала мы нашли сведения о 37 зарегистрированных медицинских изделиях, использующих технологии ИИ и имеющих действующее регистрационное удостоверение (РУ) Росздравнадзора.",
         "image": "blog/images/zaregistrirovannye-meditsinskie-izdeliia-ispolzuiushchie-tekhnologii-iskusst_iB7WBzT.jpg",
-        "views_count": 1,
+        "views_count": 8,
         "created_at": "2024-10-13T14:19:32.620Z",
         "is_published": true
     }
@@ -4867,7 +5659,7 @@
         "slug": "standartizovannaya-otchetnost-v-razrabotkah-sistem-iskusstvennogo-intellekta",
         "content": "Применение технологий искусственного интеллекта в создании различных решений, ориентированных на медицину и здравоохранение, набирает свои обороты. Такие ИИ-системы могут применятся в различных областях, включая диагностику, планирование лечения, консультирование и превентивные меры, а также робототехнику.\r\n\r\nНесмотря на присутствие на рынке большого числа различных прикладных решений, создаваемых специализированными компаниями и научно-исследовательскими коллективами, лишь небольшое их число вышло на стадию реального клинического внедрения в медицинских организациях.\r\n\r\nОдна из основных причин этого явления состоит в недостаточно высоком уровне доверия к ИИ-системам, которое в свою очередь подпитывается низким качеством отчетности об их создании и проверке, включая доклинические и клинические исследования.\r\n\r\nОдним из основных способов снижения риска некачественной отчетности является соблюдение согласованных стандартов. Многие из них одобрены биомедицинскими журналами, описывают информацию, ожидаемую в статьях с результатами исследований и разработок, в том числе в ИИ-сфере. Как правило, они состоят из контрольного списка минимально необходимых пунктов, блок-схемы и сопровождаются более подробным документом, содержащим обоснование и образцы правильной отчетности.",
         "image": "blog/images/standartizovannaia-otchetnost-v-razrabotkakh-sistem-iskusstvennogo-intellekta.jpg",
-        "views_count": 4,
+        "views_count": 6,
         "created_at": "2024-10-13T14:23:35.986Z",
         "is_published": true
     }
@@ -4877,10 +5669,10 @@
     "pk": 6,
     "fields": {
         "title": "Реализация национальной стратегии искусственного интеллекта в сфере здравоохранения",
-        "slug": "realizaciya-nacionalnoj-strategii-iskusstvennogo-intellekta-v-sfere-zdravoohraneniya",
+        "slug": "realizatsiya-natsionalnoj-strategii-iskusstvennogo-intellekta-v-sfere-zdravoohraneniya",
         "content": "Указом Президента России №490 от 10.10.2019 была утверждена национальная стратегия развития искусственного интеллекта (ИИ) в Российской Федерации на период до 2030 г., направленная на то, чтобы Россия стала одной из стран-лидеров в области ИИ. Документом Правительству РФ было поручено:\r\n\r\nДо 15.12.2019 внести в национальную программу \"Цифровая экономика РФ\", в том числе разработать и утвердить федеральный проект \"Искусственный интеллект\" (на июль 2020 г. поручение не было выполнено).\r\nВыделить в федеральных бюджетах 2020-2030 г. финансирование мероприятий, направленных на реализацию Указа.\r\nЦель стратегии состоит в том, чтобы Россия вошла в группу мировых лидеров в области развития и внедрения технологий ИИ для того, чтобы побороться за будущих рынок, размер которого по прогнозам может составить 140 млрд. долл. США в 2024 г. В документе отмечено, что если у нас в стране будет недостаточный уровень развития и использования технологий ИИ, то это приведет к ее экономическому и технологическому отставанию.\r\n\r\nПланировалось, что направленный на реализацию стратегии федеральный проект «Искусственный интеллект» будет иметь бюджет порядка 124 млрд. руб., выделенных в рамках национального проекта «Цифровая экономика». Однако из-за пандемии коронавируса окончательное принятие проекта было отложено, а на уровне Минэкономразвития весной 2020 г. началось обсуждение оптимизации затрат. Одним из мнений было в качестве приоритетного направления выбрать медицину и здравоохранение с преференциями в сторону производителей и упрощением доступа к обезличенным медицинским данным.\r\n\r\nМы внимательно изучили национальную стратегию развития искусственного интеллекта и сформулировали самые главные результаты, требования и задачи, стоящие перед здравоохранением для ее реализации.",
         "image": "blog/images/realizatsiia-natsionalnoi-strategii-iskusstvennogo-intellekta-v-sfere-zdravo_3VSnmlL.jpg",
-        "views_count": 4,
+        "views_count": 7,
         "created_at": "2024-10-13T14:32:35.963Z",
         "is_published": true
     }
@@ -4893,7 +5685,7 @@
         "slug": "tehnologii-iskusstvennogo-intellekta-v-medicine-i-zdravoohranenii-pozicii-rossii-na-globalnom-pate",
         "content": "Во 2 номере журнала «Врач и информационные технологии» вышла статья о роли России в научных исследования и патентах в области искусственного интеллекта для здравоохранения. В работе представлен обзор мер государственной политики, направленных на развитие технологий искусственного интеллекта (ИИ) в мире и в России. \r\n\r\nС целью оценить конкурентоспособность отечественных разработок, созданных для использования технологий ИИ в медицине и здравоохранении, выполнен наукометрический и патентный анализ направления за период 2010–2019 гг. На основе анализа фронтов исследований по методологии Essential science indicators выявлены наиболее перспективные на сегодняшний день исследовательские стратегии. \r\n\r\nВыяснилось, что на глобальном публикационном ландшафте Россия занимает 27-ую позицию в мире по числу публикаций, посвященных применению ИИ в здравоохранении: на долю российских исследователей, приходится менее 1% публикаций, проиндексированных в Web of science. \r\n\r\nБезусловным лидером публикационной активности являются США, резиденты которых являются авторами более трети публикаций (35%), проиндексированных WоS CC.\r\n\r\nДля вхождения в топ 5 стран по публикационной активности в этом тематическом кластере России необходимо увеличить число публикаций более, чем в 6 раз. \r\n\r\nАнализ результатов поиска в тематической категории «Сomputer science, artificial intelligence» показал, что из 316 российских организаций только 44 (14%) имеют публикации, выполненные в коллаборации с индустриальным сектором.\r\n\r\nНаиболее высокий показатель Industry Collaborations отмечен для МГТУ им. Н. З. Баумана, Института прикладной математики имени М. В. Келдыша, МГУ им. М. В. Ломоносова. Уровень кооперации остальных исследовательских организаций с предприятиями реального сектора экономики, отраженный в публикациях, следует оценивать как низкий.\r\n\r\nНа ландшафте, сформированном патентными документами, защищающими технические решения в области «ИИ в медицине», Россия занимает скромные позиции, не подтверждающие ее намерения вступить в борьбу за перспективные рынки товаров и услуг, созданных на базе этих технологий. Из 150 патентов РФ, релевантных поисковому образу, только 50 имеют российский приоритет и только 12 патентов российских разработчиков выданы в зарубежных патентных ведомствах.\r\n\r\nАвторы статьи отметили, что развитие технологий ИИ в целом и сектора медицинского назначения в частности, является четко оформленным и восходящим трендом глобальной научно-технологической сферы. Конкурентным преимуществом России является наличие большого количества высококвалифицированных специалистов в сфере ИИ, которые способны внести значительный вклад в развитие российской цифровой экономики.\r\n\r\nПолный текст публикации Куракова Н. Г., Цветкова Л. А., Черченко О.В. \"Технологии искусственного интеллекта в медицине и здравоохранении: позиции России на глобальном патентном и публикационном ландшафте\"  в журнале «Врач и информационный технологии»",
         "image": "blog/images/tekhnologii-iskusstvennogo-intellekta-v-meditsine-i-zdravookhranenii-pozitsi_lqEcCQB.jpg",
-        "views_count": 2,
+        "views_count": 4,
         "created_at": "2024-10-13T14:34:36.351Z",
         "is_published": true
     }
@@ -4906,7 +5698,7 @@
         "slug": "obzor-analiticheskih-otchetov-ob-iskusstvennom-intellekte-dlya-mediciny",
         "content": "В последнее время вышло сразу несколько интересных аналитических отчетов, затрагивающих тему искусственного интеллекта в медицине и здравоохранении. Приведем наиболее интересные цифры и выводы из них.\r\n\r\nKLAS Research и Колледж руководителей по управлению информацией в области здравоохранения (CHIME) опубликовали отчет «Healthcare AI 2019. Actualizing the potential of artificial intelligence. A KLAS-CHIME Report» первых реальных кейсов встраивания ИИ-систем в практическую медицину, которые действительно демонстрируют положительную эффективность, такую как например прогнозирование повторных госпитализаций или снижение необоснованных вызовов неотложной помощи. KLAS и CHIME провели опрос среди 57 медицинских организаций, которые недавно внедрили системы на основе машинного обучения (ML) и обработки естественного языка (NLP), с целью оценки достижений, достигнутых в клинической, финансовой и операционной областях. KLAS оценил удовлетворенность клиентов для шести ведущих поставщиков ИИ для здравоохранения: Jvion, DataRobot, KenSci, Clinithink, IBM Watson Health and Health Catalyst. Несмотря на сформированное мнение о неудачах IBM Watson, авторы исследования пришли к выводу, что корпорации IBM удалось все-таки исправить ситуацию со своим продуктом через сосредоточенность на узких областях применения. Отчет доступен тут: https://klasresearch.com/report/healthcare-ai-2019/1657\r\n\r\nOptumIQ опубликовали отчет «Annual Survey on AI in Health Care», в котором проанализировал опрос 500 лидеров и руководителей отрасли здравоохранения и пришел к выводу, что число внедрений ИИ в медицине увеличилось почти на 88% по сравнению с предыдущим годом. Авторы отмечают повышение уверенности лидеров здравоохранения в ИИ и рост инвестиций в это направление. Более того, 9 из 10 лидеров уверены, что затраты на ИИ окупятся, причем половина считает, что менее чем за 3 года. Отчет доступен тут: https://cdn-aem.optum.com/content/dam/optum3/optum/\r\n\r\nCB Insights опубликовала отчет, согласно которому интерес инвесторов к искусственному интеллекту для медицины и здравоохранения резко вырос в 2019 г. В целом объем инвестиций в эту тему составил 4 млрд. долл. и 367 сделки. Для сравнения, в 2018 г. суммарный объем инвестиций в это направление составил 2,7 млрд. долл. и 264 сделки. Вот лишь несколько примеров крупных инвестиций в 2019 г.: Babylon Health, британский чат-бот AI, собрал 550 миллионов долларов. Компания Tempus, использующая AI для анализа данных о состоянии здоровья, получила финансирование в размере 200 миллионов долларов, а компания Recursion Pharmaceuticals, занимающаяся поиском лекарств, получила 121 миллион долларов в рамках цикла финансирования серии C. Freenome, компания, использующая искусственный интеллект для раннего выявления рака, в июле 2019 г. закрыла раунд финансирования серии B стоимостью 160 миллионов долларов.",
         "image": "blog/images/obzor-analiticheskikh-otchetov-ob-iskusstvennom-intellekte-dlia-meditsiny_wMtExg1.jpg",
-        "views_count": 4,
+        "views_count": 7,
         "created_at": "2024-10-13T14:48:26.189Z",
         "is_published": true
     }
@@ -4919,7 +5711,7 @@
         "slug": "pochti-polovina-vrachej-obespokoeny-ispolzovaniem-iskusstvennogo-intellekta",
         "content": "Исследование Medscape показало, что пока применение искусственного интеллекта находится в начальном состоянии и еще добивается масштабного влияния на врачебную практику. Но все будет меняться очень быстро. \r\n\r\nИскусственный интеллект, как новая технология в здравоохранении, сейчас пользуется большим спросом. По данным опроса Medscape только 20% врачей говорят, что ИИ изменит подход к практической медицине, но для внедрения ИИ в этой сфере предстоит сделать еще очень многое.\r\n\r\nСогласно исследованию, проведенному среди 1500 врачей в Европе, Латинской Америке и США, большинство врачей обеспокоены или испытывают недоверие в отношении ИИ.\r\n\r\nВрачи из США выразили наибольший скептицизм (49%), 35% врачей в Европе и 30% врачей в Латинской Америке высказали, что им неудобен ИИ.\r\n\r\nХотя число врачей, утверждающих, что ИИ меняет врачебную практику, выросло по сравнению с прошлогодним опросом, с 15% до 20%, результаты показывают, что применение ИИ масштабно еще не влияет на общую врачебную практику и находится на начальной стадии применения.\r\n\r\nСтоит отметить, что политическая ситуация в секторе здравоохранения меняется постоянно, особенно в регулировании технологии и тенденциях, формирующих рынок.\r\n\r\nПо данным исследования, врачам более комфортно использовать инструменты на основе искусственного интеллекта в частной жизни — 50% американских врачей используют Google Home, Alexa или что-то подобное — но только 7% используют их в профессиональных целях. Что касается технологии голосового управления, то 75% врачей по какой-либо причине её не используют.\r\n\r\nТолько 19% врачей заявили, что им было бы комфортно использовать голосовые технологии во время консультации пациента, и почти каждый третий врач считает, что их роль может быть поставлена под угрозу применением программного обеспечения на основе ИИ. \r\n\r\nТем не менее технология ИИ врачам интересна. 70% опрошенных врачей отметили, что применение ИИ позволяет им принимать более точные решения.",
         "image": "blog/images/pochti-polovina-amerikanskikh-vrachei-obespokoeny-ispolzovaniem-programmnogo_GVMVO47.jpg",
-        "views_count": 1,
+        "views_count": 3,
         "created_at": "2024-10-13T14:54:35.845Z",
         "is_published": true
     }

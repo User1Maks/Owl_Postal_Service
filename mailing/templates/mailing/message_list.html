@@ -3,28 +3,30 @@
 {% block content %}
 
 <div class="card-container" style="display: flex; gap: 1rem; flex-wrap: wrap;">
-    {% if user == object.owner or perms.mailing.can_disable_mailing_status and perms.users.can_edit_is_active_users %}
+
     {% for object in object_list %}
-    <div class="card mb-3" style="width: 18rem;">
-        <img src="{{ object.image_message | media_filter }}"
-             class="card-img-top"
-             alt="..."
-             style="max-width: 100%; height: auto; max-height: 160px;">
-        <div class="card-body">
-            <h5 class="card-title">{{ object.letter_subject }}</h5>
-            <p class="card-text">
-                {{ object.letter_body | truncatechars:100 }}</p>
+        {% if user == object.owner or perms.users.can_edit_is_active_users and perms.mailing.can_disable_mailing_status %}
+        <div class="card mb-3" style="width: 18rem;">
+            <img src="{{ object.image_message | media_filter }}"
+                 class="card-img-top"
+                 alt="..."
+                 style="max-width: 100%; height: auto; max-height: 160px;">
+            <div class="card-body">
+                <h5 class="card-title">{{ object.letter_subject }}</h5>
+                <p class="card-text">
+                    {{ object.letter_body | truncatechars:100 }}</p>
 
-            {% if perms.mailing.view_message %}
-            <a class="btn btn-primary"
-               href="{% url 'mailing:message_detail' object.pk %}"
-               role="button">Открыть</a>
-            {% endif %}
+                {% if perms.mailing.view_message %}
+                <a class="btn btn-primary"
+                   href="{% url 'mailing:message_detail' object.pk %}"
+                   role="button">Открыть</a>
+                {% endif %}
+            </div>
         </div>
-    </div>
 
+
+        {% endif %}
     {% endfor %}
-    {% endif %}
 </div>
 {% endblock %}
 

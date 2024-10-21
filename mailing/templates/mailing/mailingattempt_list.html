@@ -1,0 +1,34 @@
+{% extends 'home.html' %}
+{% block content %}
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Дата и время попытки отправки</th>
+        <th scope="col">Статус попытки</th>
+        <th scope="col">Ответ сервиса</th>
+        <th scope="col">Клиент</th>
+        <th scope="col">Рассылка</th>
+    </tr>
+    </thead>
+    {% if user == object.owner or perms.mailing.can_disable_mailing_status and perms.users.can_edit_is_active_users %}
+    {% for object in object_list %}
+    <tbody>
+    <tr>
+        <th scope="row">{{ object.pk }}</th>
+        <th>{{object.datetime_attempt }}</th>
+
+        <td>{{ object.attempt_status }}</td>
+        <td>{{ object.service_response }}</td>
+        <td>{{ object.client }}</td>
+
+        <td>{{ object.mailing }}</td>
+
+    </tr>
+    </tbody>
+    {% endfor %}
+    {% endif %}
+</table>
+
+{% endblock %}

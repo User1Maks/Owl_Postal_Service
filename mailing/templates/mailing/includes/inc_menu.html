@@ -1,10 +1,11 @@
-<header>
+<header data-bs-theme="dark">
     <div class="collapse bg-dark" id="navbarHeader">
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 col-md-7 py-4">
                     <h4 class="text-white">Сова </h4>
-                    <p class="text-muted">Почтовый сервис рассылок "Сова",
+                    <p class="text-body-secondary">Почтовый сервис рассылок
+                        "Сова",
                         поможет вам привлечь аудиторию, наладить коммуникацию
                         и лидогенерацию.
                     </p>
@@ -20,7 +21,7 @@
                         {% if user.is_authenticated %}
 
                         <li><a class="text-white"
-                               href="{% url 'users:profile' %}"
+                               href="{% url 'users:user_profile' %}"
                                role="button">Профиль</a>
 
                         <li><a class="text-white"
@@ -45,7 +46,7 @@
                         <li><a class="text-white"
                                href="/admin/"
                                role="button">Администрирование</a>
-                        {% endif %}
+                            {% endif %}
 
                     </ul>
                 </div>
@@ -64,9 +65,10 @@
                 </svg>
                 <strong>Рассылки</strong>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarHeader" aria-controls="navbarHeader"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false"
+                    aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>

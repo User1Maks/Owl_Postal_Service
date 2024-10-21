@@ -19,7 +19,8 @@ class UserProfileForm(StyleFormMixin, UserChangeForm):
 
     class Meta:
         model = User
-        fields = ('email', 'avatar', 'phone', 'a_country')
+        fields = ('first_name', 'last_name',
+                  'email', 'avatar', 'phone', 'a_country')
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -30,4 +31,5 @@ class UserProfileForm(StyleFormMixin, UserChangeForm):
 class UserModeratorForm(StyleFormMixin, ModelForm):
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ('first_name', 'last_name',
+                  'email', 'avatar', 'phone', 'a_country','is_staff')

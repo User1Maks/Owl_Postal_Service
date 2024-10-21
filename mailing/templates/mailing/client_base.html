@@ -61,6 +61,7 @@
                 контактную и другую важную информацию</p>
             <p>
                 {% if perms.mailing.add_client %}
+                {% csrf_token %}
                 <a href="{% url 'mailing:client_create' %}" class="btn btn-primary my-2">Добавить клиента</a>
                 {% endif %}
                 <a href="/" class="btn btn-secondary my-2">На главную</a>

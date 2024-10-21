@@ -1,5 +1,6 @@
 from smtplib import SMTPException
 
+from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.models import Group
 import secrets
 from django.contrib.auth.mixins import (
@@ -7,7 +8,6 @@ from django.contrib.auth.mixins import (
     PermissionRequiredMixin,
     UserPassesTestMixin
 )
-from django.core.exceptions import PermissionDenied
 from django.urls import reverse_lazy, reverse
 from django.views.generic import (
     CreateView,
@@ -35,13 +35,12 @@ class UserCreateView(CreateView):
 
     model = User
     form_class = UserRegisterForm
-    template_name = 'users/register.html'
     success_url = reverse_lazy('users:login')
+    template_name = 'users/register.html'
 
     def form_valid(self, form):
         """Верификация пользователя по почте"""
-        user = form.save(commit=False)  # Сохраняем пользователя, но не
-        # отправляем его в базу данных
+        user = form.save()
         user.is_active = False  # Делаем пользователя неактивным, пока он не
         # подтвердит почту
         token = secrets.token_hex(16)  # Создаем токен для подтверждения
@@ -91,25 +90,38 @@ class UserDetailView(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
     """Контролер для просмотра информации о пользователе"""
     model = User
     permission_required = 'users.view_user'
+    template_name = 'users/user_profile.html'
+
+    def get_object(self, queryset=None):
+        return self.request.user
 
 
-class ProfileView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+class ProfileUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     """Контролер для редактирования профиля пользователя"""
 
     model = User
     form_class = UserProfileForm
-    permission_required = 'users.change_profile'
-    success_url = reverse_lazy('users:profile')
+    permission_required = 'users.change_user'
+    success_url = reverse_lazy('users:user_profile')
 
     def get_object(self, queryset=None):
         return self.request.user
 
     def get_form_class(self):
         user = self.request.user
-        if user.has_perm('users.can_edit_is_active_users') or user.has_perm(
+        if user.has_perm('users.can_edit_is_active_users') and user.has_perm(
                 'mailing.can_disable_mailing_status'):
             return UserModeratorForm
-        raise PermissionDenied
+        return UserProfileForm
+
+
+@login_required
+@permission_required('can_edit_is_active_users')
+def block_user(request, pk):
+    """Контролер для блокировки пользователя"""
+    user = User.objects.get(pk=pk)
+    user.is_active = False
+    user.save()
 
 
 class UserDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):

@@ -1,4 +1,4 @@
-{% extends 'home.html' %}
+{% extends 'users/index.html' %}
 {% block content %}
 
 
@@ -21,12 +21,12 @@
     </form>
     <hr>
     <div class="text-center">
-        Забыли пароль? <a href="#">Сбросить
+        Забыли пароль? <a href="{% url 'users:password_reset' %}">Сбросить
         пароль</a>
     </div>
     <div class="text-center">
         Нет аккаунта? <a
-            href="#">Зарегистрироваться</a>
+            href="{% url 'users:register' %}">Зарегистрироваться</a>
     </div>
 </div>
 {% endblock %}

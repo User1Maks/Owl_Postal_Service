@@ -11,6 +11,14 @@
         <p class="card-text">{{ object.a_comment }}</p>
         <p class="card-date">Дата рождения: {{ object.date_of_birth }}</p>
 
+        <ul>
+            <p class="card-date">Пользователь(/и):</p>
+            {% for user in object.owner.all %}
+            <li>{{user.email}}</li>
+            {% endfor %}
+
+        </ul>
+
         <div class="card-footer">
 
             <a class="p-2 btn btn-primary mb-2"
@@ -18,10 +26,14 @@
                role="button"
                style="margin-right: 10px;">Назад</a>
 
-            <a class="p-2 btn btn-warning mb-2"
-               href="{% url 'mailing:client_update' object.pk %}"
-               role="button"
-               style="margin-right: 10px;">Редактировать</a>
+            {% if user in object.owner.all %}
+
+                <a class="p-2 btn btn-warning mb-2"
+                   href="{% url 'mailing:client_update' object.pk %}"
+                   role="button"
+                   style="margin-right: 10px;">Редактировать</a>
+
+            {% endif %}
 
             <a class="p-2 btn btn-danger mb-2"
                href="{% url 'mailing:client_delete' object.pk %}"

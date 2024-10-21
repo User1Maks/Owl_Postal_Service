@@ -10,7 +10,9 @@ from mailing.views import (
     MessageDeleteView,
 
     MailingListView, MailingCreateView, MailingDetailView, MailingUpdateView,
-    MailingDeleteView
+    MailingDeleteView, cancel_mailing,
+
+    MailingAttemptListView
 )
 from django.views.decorators.cache import cache_page
 
@@ -41,9 +43,16 @@ urlpatterns = [
     # Рассылки
     path('mailing/list/', MailingListView.as_view(), name='mailing_list'),
     path('mailing/create/', MailingCreateView.as_view(), name='mailing_create'),
-    path('mailing/<int:pk>/', MailingDetailView.as_view(), name='mailing_detail'),
+    path('mailing/<int:pk>/', MailingDetailView.as_view(),
+         name='mailing_detail'),
     path('mailing/<int:pk>/update/', MailingUpdateView.as_view(),
          name='mailing_update'),
     path('mailing/<int:pk>/delete/', MailingDeleteView.as_view(),
          name='mailing_delete'),
+    path('cancel_mailing/<int:pk>/', cancel_mailing, name='cancel_mailing'),
+
+    # Попытка рассылки
+    path('mailing_attempt/list/', MailingAttemptListView.as_view(),
+         name='mailing_attempt_list'),
+
 ]

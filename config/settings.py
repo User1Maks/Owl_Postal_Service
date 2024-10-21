@@ -122,7 +122,7 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 LOGIN_URL = "/"
 
 # Для вкл./откл. кеша в приложении
-CACHES_ENABLED = False
+CACHES_ENABLED = True
 if CACHES_ENABLED:
     CACHES = {
         "default": {
