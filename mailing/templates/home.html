@@ -1,4 +1,5 @@
 {% load static %}
+{% load cache %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -132,12 +133,15 @@
                 {% endfor %}
             </ul>
             {% if user.is_authenticated %}
-            <h2>Статистика рассылок</h2>
-            <ul>
-                <li>Общее количество рассылок: {{ number_of_mailings }}</li>
-                <li>Количество активных рассылок: {{ active_mailings }}</li>
-                <li>Количество уникальных клиентов: {{ unique_clients }}</li>
-            </ul>
+
+                <h2>Статистика рассылок</h2>
+                {% cache 600 user_statistics user.pk %}
+                <ul>
+                    <li>Общее количество рассылок: {{ number_of_mailings }}</li>
+                    <li>Количество активных рассылок: {{ active_mailings }}</li>
+                    <li>Количество уникальных клиентов: {{ unique_clients }}</li>
+                </ul>
+                {% endcache %}
             {% endif %}
         </div>
     </div>
