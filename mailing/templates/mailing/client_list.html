@@ -17,7 +17,7 @@
     {% for object in object_list %}
 
         <tbody>
-        {% if user in object.owner.all %}
+        {% if user == object.owner or perms.users.can_edit_is_active_users and perms.mailing.can_disable_mailing_status %}
         <tr>
             <th scope="row">{{ object.pk }}</th>
             <td><a href="{% url 'mailing:client_detail' object.pk %}">

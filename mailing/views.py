@@ -1,5 +1,3 @@
-from venv import logger
-
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.mixins import (
     LoginRequiredMixin,
@@ -52,6 +50,11 @@ class ClientListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
     model = Client
     permission_required = 'mailing.view_client'
 
+    def get_queryset(self):
+        # Возвращаем только тех клиентов, которые принадлежат
+        # текущему пользователю
+        return Client.objects.filter(owner=self.request.user)
+
 
 class ClientCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     model = Client
@@ -63,9 +66,11 @@ class ClientCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
         """Метод для добавления ссылки на модель пользователя, которая
         заполняется автоматически"""
         client = form.save(commit=False)
-        client.save()  # сначала сохраняем клиент, чтобы получить его ID
+        # client.save()  # сначала сохраняем клиент, чтобы получить его ID
         user = self.request.user
-        client.owner.add(user)
+        client.owner = user
+        client.save()
+        # client.owner.add(user)
         return super().form_valid(form)
 
 

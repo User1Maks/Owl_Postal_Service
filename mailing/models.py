@@ -20,8 +20,10 @@ class Client(models.Model):
     date_of_birth = models.DateField(verbose_name='Дата рождения',
                                      **NULLABLE,
                                      help_text='Введите дату рождения')
-    owner = models.ManyToManyField(
+    owner = models.ForeignKey(
         User,
+        on_delete=models.CASCADE,
+        **NULLABLE,
         verbose_name='Пользователь',
         related_name='clients')
 
@@ -155,10 +157,6 @@ class MailingAttempt(models.Model):
         null=True,
         editable=False
     )
-    client = models.ForeignKey(
-        Client,
-        on_delete=models.CASCADE,
-        verbose_name='Клиент')
 
     mailing = models.ForeignKey(
         Mailing,
