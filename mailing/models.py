@@ -23,7 +23,6 @@ class Client(models.Model):
     owner = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        **NULLABLE,
         verbose_name='Пользователь',
         related_name='clients')
 
