@@ -51,8 +51,8 @@ class ClientListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
     permission_required = 'mailing.view_client'
 
     def get_queryset(self):
-        # Возвращаем только тех клиентов, которые принадлежат
-        # текущему пользователю
+        """Возвращаем только тех клиентов, которые принадлежат
+        текущему пользователю"""
         return Client.objects.filter(owner=self.request.user)
 
 
@@ -102,6 +102,11 @@ class MessageListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
     model = Message
     permission_required = 'mailing.view_message'
 
+    def get_queryset(self):
+        """Возвращаем только те сообщения, которые принадлежат
+        текущему пользователю"""
+        return Message.objects.filter(owner=self.request.user)
+
 
 class MessageCreateView(LoginRequiredMixin, PermissionRequiredMixin,
                         CreateView):
@@ -147,6 +152,10 @@ class MessageDeleteView(LoginRequiredMixin, PermissionRequiredMixin,
 class MailingListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
     model = Mailing
     permission_required = 'mailing.view_mailing'
+
+    def get_queryset(self):
+        """Возвращаем только те рассылки, которые принадлежат пользователю"""
+        return Mailing.objects.filter(owner=self.request.user)
 
 
 class MailingCreateView(LoginRequiredMixin, PermissionRequiredMixin,
@@ -211,3 +220,9 @@ class MailingDeleteView(LoginRequiredMixin, PermissionRequiredMixin,
 
 class MailingAttemptListView(LoginRequiredMixin, ListView):
     model = MailingAttempt
+
+    def get_queryset(self):
+        """Возвращаем только те попытки рассылки, которые принадлежат
+        текущему пользователю"""
+        return MailingAttempt.objects.filter(mailing__owner=self.request.user)
+
